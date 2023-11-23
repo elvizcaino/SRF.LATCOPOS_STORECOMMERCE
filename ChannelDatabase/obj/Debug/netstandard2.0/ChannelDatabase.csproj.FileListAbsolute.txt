@@ -1,0 +1,10 @@
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.deps.json
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.csproj.AssemblyReference.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.AssemblyInfoInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.AssemblyInfo.cs
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.csproj.CoreCompileInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.pdb

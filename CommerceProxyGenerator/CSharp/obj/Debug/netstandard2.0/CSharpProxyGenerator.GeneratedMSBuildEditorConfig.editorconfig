@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SRF.Commerce.RetailProxy.Extension
+build_property.ProjectDir = C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceProxyGenerator\CSharp\

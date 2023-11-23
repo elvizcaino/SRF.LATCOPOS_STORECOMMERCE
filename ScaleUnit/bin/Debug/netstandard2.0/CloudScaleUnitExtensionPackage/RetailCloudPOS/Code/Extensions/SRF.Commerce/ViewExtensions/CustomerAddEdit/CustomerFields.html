@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CustomerFields.css" rel="stylesheet" />
+</head>
+<body>
+    <script id="Microsoft_Pos_Extensibility_Samples_CustomerFields" type="text/html">
+        <div class="gutter20x20"></div>
+        <h2 class="marginTop8 marginBottom8" data-bind="text: context.resources.getString('colombiaLocation')">Localizacion Colombia</h2>
+
+        <div class="row">
+            <div class="col stretch">
+                <label for="LATCODocumentType" data-bind="text: context.resources.getString('documentType')">Tipo de documento</label>
+                <input type="text" id="LATCODocumentType" data-bind="value: LATCODocumentType, valueUpdate: 'afterkeydown'" />
+                <select id="LATCODocumentType1"
+                        data-bind="enable: true,
+                                            options: LATCODocumentTypeList,
+                                            optionsText: 'Description',
+                                            optionsValue: 'DocumentId',
+                                            value: 'CC',
+                                            optionsCaption: context.resources.getString('selectDocumentType'),
+                                            attr: { 'title': context.resources.getString('selectDocumentType') }">
+                </select>
+            </div>
+
+            <div class="gutter40x40"></div>
+
+            <div class="col stretch">
+                <label for="IDENTIFICATIONNUMBER" data-bind="text: context.resources.getString('identificationNumber')">Nro. Identificacion</label>
+                <input type="text" id="IDENTIFICATIONNUMBER" data-bind="value: IDENTIFICATIONNUMBER, valueUpdate: 'afterkeydown'" />
+            </div>
+        </div>
+
+        <div class="gutter20x20"></div>
+
+        <div class="row">
+            <div class="col stretch">
+                <label for="LATCOContributorType" data-bind="text: context.resources.getString('contributorType')">Tipo de contrubuyente</label>
+                <input type="text" id="LATCOContributorType" data-bind="value: LATCOContributorType, valueUpdate: 'afterkeydown'" />
+            </div>
+
+            <div class="gutter40x40"></div>
+
+            <div class="col stretch">
+                <label for="LATCOActivityCIIUId" data-bind="text: context.resources.getString('activityCIIU')">Cod. CIIU</label>
+                <input type="text" id="LATCOActivityCIIUId" data-bind="value: LATCOActivityCIIUId, valueUpdate: 'afterkeydown'" />
+            </div>
+        </div>
+
+        <div class="gutter20x20"></div>
+
+        <div class="row">
+            <div class="col stretch">
+                <label for="LATCOIvaRegime" data-bind="text: context.resources.getString('taxIvaRegime')">Regimen de IVA</label>
+                <input type="text" id="LATCOIvaRegime" data-bind="value: LATCOIvaRegime, valueUpdate: 'afterkeydown'" />
+            </div>
+
+            <div class="gutter40x40"></div>
+
+            <div class="col stretch">
+                <label for="LATCOObligationCode" data-bind="text: context.resources.getString('obligationCode')">Cod. de Obligacion</label>
+                <input type="text" id="LATCOObligationCode" data-bind="value: LATCOObligationCode, valueUpdate: 'afterkeydown'" />
+            </div>
+        </div>
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿{
+  "$schema": "./devDependencies/schemas/manifestSchema.json",
+  "name": "SRF.Pos.LATCO",
+  "publisher": "SRF",
+  "version": "1.0.0",
+  "minimumPosVersion": "9.29.0.0",
+  "description": "Una extensión para Localización Colombia.",
+  "dependencies": [
+    {
+      "alias": "knockout",
+      "format": "amd",
+      "modulePath": "Libraries/knockout"
+    }
+  ],
+  "components": {
+    "resources": {
+      "name": "Language",
+      "description": "Language resource file",
+      "supportedUICultures": [ "en-US", "es-MX" ],
+      "fallbackUICulture": "en-US",
+      "culturesDirectoryPath": "Resources/Strings",
+      "stringResourcesFileName": "resources.resjson"
+    },
+    "extend": {
+      "views": {
+        "CustomerAddEditView": {
+          "controlsConfig": {
+            "customControls": [
+              {
+                "name": "Customers - Localización Colombia",
+                "description": "Campos nuevos para clientes Localización Colombia",
+                "controlName": "customerFields",
+                "htmlPath": "ViewExtensions/CustomerAddEdit/CustomerFields.html",
+                "modulePath": "ViewExtensions/CustomerAddEdit/CustomerFields"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

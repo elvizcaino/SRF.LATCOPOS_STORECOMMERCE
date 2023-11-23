@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Admin84bb96b0b3\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Admin84bb96b0b3\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\contentFiles\cs\netstandard2.0\Program.cs" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\contentFiles\cs\netstandard2.0\Program.cs')">
+      <NuGetPackageId>Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit</NuGetPackageId>
+      <NuGetPackageVersion>9.48.23326.5-preview</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\contentFiles\cs\netstandard2.0\ScaleUnitExtensionPackageInstallerSetup.cs" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\contentFiles\cs\netstandard2.0\ScaleUnitExtensionPackageInstallerSetup.cs')">
+      <NuGetPackageId>Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit</NuGetPackageId>
+      <NuGetPackageVersion>9.48.23326.5-preview</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>ScaleUnitExtensionPackageInstallerSetup.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_ScaleUnit Condition=" '$(PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_ScaleUnit)' == '' ">C:\Users\Admin84bb96b0b3\.nuget\packages\microsoft.dynamics.commerce.sdk.installers.scaleunit\9.48.23326.5-preview</PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_ScaleUnit>
+  </PropertyGroup>
+</Project>

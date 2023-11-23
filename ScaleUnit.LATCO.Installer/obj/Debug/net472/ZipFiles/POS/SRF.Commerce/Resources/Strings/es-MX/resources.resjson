@@ -1,0 +1,18 @@
+﻿{
+  "colombiaLocation": "Localización Colombia",
+  "colombiaLocation.comment": "Localización Colombia",
+  "documentType": "Tipo de documento",
+  "documentType.comment": "Tipo de documento",
+  "contributorType": "Tipo de contrubuyente",
+  "contributorType.comment": "Tipo de contrubuyente",
+  "identificationNumber": "Número de identificación",
+  "identificationNumber.comment": "Número de identificación",
+  "activityCIIU": "Código CIIU",
+  "activityCIIU.comment": "Código CIIU",
+  "taxIvaRegime": "Régimen de IVA",
+  "taxIvaRegime.comment": "Régimen de IVA",
+  "obligationCode": "Código de obligación",
+  "obligationCode.comment": "Código de obligación",
+  "selectDocumentType": "Seleccione un tipo de documento",
+  "selectDocumentType.comment": "Seleccione un tipo de documento"
+}

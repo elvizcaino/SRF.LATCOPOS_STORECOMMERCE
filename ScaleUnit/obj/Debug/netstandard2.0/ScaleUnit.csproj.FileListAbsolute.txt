@@ -1,0 +1,17 @@
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.deps.json
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\ChannelDatabase.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\CommerceRuntime.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\POS.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\ChannelDatabase.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\CommerceRuntime.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\bin\Debug\netstandard2.0\POS.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.csproj.AssemblyReference.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.AssemblyInfoInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.AssemblyInfo.cs
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.csproj.CoreCompileInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.csproj.CopyComplete
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.pdb

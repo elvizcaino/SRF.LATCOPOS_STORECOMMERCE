@@ -1,0 +1,12 @@
+<Project>
+  <Import Project="repo.props" />
+
+  <PropertyGroup>
+    <PackagePublisher Condition="'$(PackagePublisher)' == ''">$(Publisher)</PackagePublisher>
+    <PackagePublisherDisplayName Condition="'$(PackagePublisherDisplayName)' == ''">$(PublisherDisplayName)</PackagePublisherDisplayName>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">$(Version)</PackageVersion>
+    <PackageName Condition="'$(PackageName)' == ''">SRF.Commerce</PackageName>
+    <PackageDisplayName Condition="'$(PackageDisplayName)' == ''">SRF Consultores Scale Unit Commerce</PackageDisplayName>
+    <PackageDescription Condition="'$(PackageDescription)' == ''">SRF Consultores Scale Unit Commerce</PackageDescription>
+  </PropertyGroup>
+</Project>

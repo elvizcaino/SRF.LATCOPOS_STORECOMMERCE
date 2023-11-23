@@ -1,0 +1,10 @@
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\bin\Debug\netstandard2.0\CommerceRuntime.deps.json
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\bin\Debug\netstandard2.0\CommerceRuntime.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\bin\Debug\netstandard2.0\CommerceRuntime.pdb
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.csproj.AssemblyReference.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.AssemblyInfoInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.AssemblyInfo.cs
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.csproj.CoreCompileInputs.cache
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.dll
+C:\DevPOS\LATCOPOS_STORECOMMERCE\CommerceRuntime\obj\Debug\netstandard2.0\CommerceRuntime.pdb

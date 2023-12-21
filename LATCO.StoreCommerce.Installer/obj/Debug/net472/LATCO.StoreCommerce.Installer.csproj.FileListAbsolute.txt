@@ -89,8 +89,7 @@ C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\bin\Debug\net472\
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\bin\Debug\net472\ru\Microsoft.Data.SqlClient.resources.dll
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\bin\Debug\net472\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\bin\Debug\net472\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\NuGet\642699E86E601CB1C075754BD46CA4D656FD27A0\Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce\9.48.23326.5-preview\ExtensionInstallAction.cs
-C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\NuGet\642699E86E601CB1C075754BD46CA4D656FD27A0\Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce\9.48.23326.5-preview\Setup.cs
+C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\NuGet\642699E86E601CB1C075754BD46CA4D656FD27A0\Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce\9.45.23355.2\Setup.cs
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\LATCO.StoreCommerce.Installer.csproj.AssemblyReference.cache
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\LATCO.StoreCommerce.Installer.csproj.SuggestedBindingRedirects.cache
 C:\DevPOS\LATCOPOS_STORECOMMERCE\LATCO.StoreCommerce.Installer\obj\Debug\net472\LATCO.StoreCommerce.Installer.exe.config

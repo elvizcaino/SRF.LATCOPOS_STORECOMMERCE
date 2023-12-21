@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj",
         "projectName": "ChannelDatabase",
@@ -50,7 +50,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -75,7 +75,7 @@
       }
     },
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceRuntime\\CommerceRuntime.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceRuntime\\CommerceRuntime.csproj",
         "projectName": "CommerceRuntime",
@@ -128,12 +128,12 @@
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "Microsoft.Dynamics.Commerce.Sdk.Runtime": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -158,7 +158,7 @@
       }
     },
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\POS\\POS.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\POS\\POS.csproj",
         "projectName": "POS",
@@ -207,7 +207,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Sdk.Pos": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "Microsoft.TypeScript.MSBuild": {
               "target": "Package",
@@ -240,7 +240,7 @@
       }
     },
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ScaleUnit\\ScaleUnit.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ScaleUnit\\ScaleUnit.csproj",
         "projectName": "ScaleUnit",
@@ -295,7 +295,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

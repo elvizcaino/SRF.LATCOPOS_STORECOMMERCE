@@ -6,8 +6,7 @@
 } from "PosApi/Extend/Views/CustomerAddEditView";
 import { ObjectExtensions } from "PosApi/TypeExtensions";
 import { ProxyEntities } from "PosApi/Entities";
-//import { LATCOBasicDocumentTypeBoundController } from "DataService/DataServiceRequests.g";
-//import { Entities } from "DataService/DataServiceEntities.g";
+import LATCODocumentTypeViewModel from "./LATCODocumentTypeViewModel";
 
 import ko from "knockout";
 
@@ -20,6 +19,8 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
     private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_CustomerFields";
     public accountNumber: ko.Observable<string>;
 
+    public readonly latcoDocumentTypeViewModel: LATCODocumentTypeViewModel;
+
 
     public IDENTIFICATIONNUMBER: ko.Observable<string>
     public LATCODocumentType: ko.Observable<string>
@@ -28,11 +29,15 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
     public LATCOIvaRegime: ko.Observable<string>
     public LATCOObligationCode: ko.Observable<string>
     public customerIsPerson: ko.Observable<boolean>;
-    public LATCODocumentTypeList: ko.Observable<ILATCODocumentType> = [] ;
+    //public LATCODocumentTypeList: ko.Observable<ILATCODocumentType> = [] ;
     //public LATCODocumentTypeList: ko.Observable<Entities.LATCOBasicDocumentTypeEntity>[] = [];
+    public LATCODocumentTypeList: ILATCODocumentType[] = [];
     
     constructor(id: string, context: ICustomerAddEditCustomControlContext) {
         super(id, context);
+
+        // Initialize the view model.
+        this.latcoDocumentTypeViewModel = new LATCODocumentTypeViewModel(context);
 
         this.accountNumber = ko.observable("");
         this.customerIsPerson = ko.observable(true);
@@ -52,35 +57,6 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
         this.IDENTIFICATIONNUMBER.subscribe((newValue: string): void => {
             this._addOrUpdateExtensionProperty(IDENTIFICATIONNUMBER_key, <ProxyEntities.CommercePropertyValue>{ StringValue: newValue });
         });
-
-        /*try {
-            //let request: LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>
-                //= new LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>();
-
-            //var result = this.context.runtime.executeAsync(new LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>());
-
-
-            //Promise.resolve(result);
-        } catch (error) {
-            alert(error.toString());
-        }*/
-
-       
-
-        //let promise: Promise<void> =
-        /*this.context.runtime.executeAsync(req)
-            .then((result) => {
-                if (!result.canceled) {
-                    this.LATCODocumentTypeList = result.data.result;
-                }
-            }).catch((reason: any): void => {
-                this.context.logger.logError("Hubo un error: " + reason.toString());
-            });*/
-
-        this.LATCODocumentTypeList = ko.observable([
-            { DocumentId: 'CC', Description: 'Cedula de ciudadania colombiana 1' },
-            { DocumentId: 'NIT', Description: 'Numero de identificacion tributaria' }
-        ]);
 
         this.LATCODocumentType = ko.observable("");
         this.LATCODocumentType.subscribe((newValue: string): void => {
@@ -107,14 +83,28 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
             this._addOrUpdateExtensionProperty(LATCOObligationCode_key, <ProxyEntities.CommercePropertyValue>{ StringValue: newValue });
         });
 
-        /*if (this.customerIsPerson() === true) {
-            alert('verdadero');
+        if (this.customerIsPerson() === true) {
+            //alert('verdadero');
             this.LATCODocumentType = ko.observable("CC")
-            this._addOrUpdateExtensionProperty(LATCODocumentType_key, <ProxyEntities.CommercePropertyValue>{ StringValue: newValue });
+            //this._addOrUpdateExtensionProperty(LATCODocumentType_key, <ProxyEntities.CommercePropertyValue>{ StringValue: newValue });
         } else {
-            alert('falso');
+            //alert('falso');
             this.LATCODocumentType = ko.observable("NIT")
-        }*/
+        }
+
+        //this.LATCODocumentTypeList = [{ DocumentId: "CC", Description: "Ced. Ciudadania" }, { DocumentId: "NIT", Description: "Nro. Ident. Tributario" }];
+
+        this.latcoDocumentTypeViewModel.load()
+            .then((): void => {
+                //this.LATCODocumentTypeList = this.latcoDocumentTypeViewModel.loadedData;
+                for (var i = 0; i < this.latcoDocumentTypeViewModel.loadedData.length; i++) {
+                    this.LATCODocumentTypeList.push({ DocumentId: this.latcoDocumentTypeViewModel.loadedData[i].DocumentId, Description: this.latcoDocumentTypeViewModel.loadedData[i].Description });
+                }
+            })
+            .catch((reason: any) => {
+                alert(`Error en constructor CustomerFields: this.latcoDocumentTypeViewModel.load(): ${JSON.stringify(reason)}`);
+                this.context.logger.logError("An error occurred while loading the LATCOBasicDocumentTypeViewModel: " + JSON.stringify(reason));
+            });
 
         // Logs the completion of constructing the DualDisplayCustomControl.
         this.context.logger.logInformational("Samples_CustomerFields constructed", this.context.logger.getNewCorrelationId());
@@ -131,6 +121,20 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
                 data: this
             }
         });
+
+       /*document.getElementById("customerTypeInput").addEventListener('change', () => {
+            if (this.customerIsPerson() === true) {
+                document.getElementById("LATCODocumentType").innerHTML = "CC"
+                this.LATCODocumentType = ko.observable("CC")
+                this._addOrUpdateExtensionProperty("LATCODOCUMENTTYPE", <ProxyEntities.CommercePropertyValue>{ StringValue: "CC" });
+                //alert('verdadero');
+            } else {
+                document.getElementById("LATCODocumentType").innerHTML = "NIT"
+                this.LATCODocumentType = ko.observable("NIT")
+                this._addOrUpdateExtensionProperty("LATCODOCUMENTTYPE", <ProxyEntities.CommercePropertyValue>{ StringValue: "NIT" });
+                //alert('falso');
+            }
+        });*/
     }
 
     /**
@@ -199,23 +203,7 @@ export default class CustomerFields extends CustomerAddEditCustomControlBase {
                 this.LATCOObligationCode(LATCOObligationCodeExtensionValue.StringValue);
             }
 
-            try {
-                //let request: LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>
-                //= new LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>();
-
-                //var result = new LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesRequest<LATCOBasicDocumentTypeBoundController.GetAllLATCOBasicDocumentTypeEntitiesResponse>();
-                //var result = new BoundController.GetAllExampleEntitiesRequest();
-                //var result = this.getAllExampleEntitiesRequest.correlationId
-                this.context.runtime.executeAsync(new Commerce.GetCustomerClientRequest("004222"))
-                    .then((result) => {
-                        alert(result.data.result.FirstName);
-                    })
-                    .catch((error1) => {
-                        alert(error1.toString());
-                    });
-            } catch (error) {
-                alert(error.toString());
-            }
+            
 
             /*if (this.customerIsPerson() === true) {
                 this.LATCODocumentType = ko.observable("CC");

@@ -7,16 +7,16 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "ChannelDatabase/9.48.0.0": {
+      "ChannelDatabase/9.45.0.0": {
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": "9.48.23326.5-preview",
+          "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": "9.45.23355.2",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "ChannelDatabase.dll": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {},
+      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
@@ -26,17 +26,17 @@
     }
   },
   "libraries": {
-    "ChannelDatabase/9.48.0.0": {
+    "ChannelDatabase/9.45.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {
+    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BYT6mQFEmRsQE6ymKbyajngD3fHIMpKu6a3aCV7jQOmK8ai/9bLhT0eSOeY/4nBrZbTqk7EqeORhc1BLmaPMCA==",
-      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.48.23326.5-preview",
-      "hashPath": "microsoft.dynamics.commerce.sdk.channeldatabase.9.48.23326.5-preview.nupkg.sha512"
+      "sha512": "sha512-X8oikZpK9BW5o61gN4YFXEDAPidh44foWTO19bkRZfcExEwNrVt+C78qY9EGJDjlg0PAvP/FNx0MHiFy9Tndqw==",
+      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.45.23355.2",
+      "hashPath": "microsoft.dynamics.commerce.sdk.channeldatabase.9.45.23355.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

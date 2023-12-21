@@ -16,7 +16,7 @@ namespace SRF.CommerceRuntime.RequestHandlers
             {
                 return new[]
                 {
-                    typeof(UpdateCustTableExtensionEntityDataRequest),
+                    typeof(UpdateCustTableExtensionDataRequest),
                 };
             }
         }
@@ -27,14 +27,14 @@ namespace SRF.CommerceRuntime.RequestHandlers
 
             switch (request)
             {
-                case UpdateCustTableExtensionEntityDataRequest updateCustTableExtensionEntityDataRequest:
+                case UpdateCustTableExtensionDataRequest updateCustTableExtensionEntityDataRequest:
                     return UpdateCustTableExtensionEntity(updateCustTableExtensionEntityDataRequest);
                 default:
                     throw new NotSupportedException($"Request '{request.GetType()}' is not supported.");
             }
         }
 
-        private static async Task<Response> UpdateCustTableExtensionEntity(UpdateCustTableExtensionEntityDataRequest request)
+        private static async Task<Response> UpdateCustTableExtensionEntity(UpdateCustTableExtensionDataRequest request)
         {
             ThrowIf.Null(request, nameof(request));
             ThrowIf.Null(request.UpdatedCustTableExtensionEntity, nameof(request.UpdatedCustTableExtensionEntity));
@@ -67,7 +67,7 @@ namespace SRF.CommerceRuntime.RequestHandlers
                 updateSuccess = (sprocErrorCode == 0);
             }
 
-            return new UpdateCustTableExtensionEntityDataResponse(updateSuccess);
+            return new UpdateCustTableExtensionDataResponse(updateSuccess);
         }
     }
 }

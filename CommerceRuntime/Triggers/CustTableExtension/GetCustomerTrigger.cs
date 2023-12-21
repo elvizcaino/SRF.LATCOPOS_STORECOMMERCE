@@ -45,7 +45,7 @@ namespace SRF.CommerceRuntime.Triggers.CustTableExtension
         private static async Task HandleOnExecuted(GetCustomersServiceRequest request, GetCustomersServiceResponse response)
         {
             var context = request.RequestContext;
-            Customer cust = response.Customers.FirstOrDefault();
+            Customer customer = response.Customers.FirstOrDefault();
 
             var query = new SqlPagedQuery(QueryResultSettings.AllRecords)
             {
@@ -55,7 +55,7 @@ namespace SRF.CommerceRuntime.Triggers.CustTableExtension
                 Where = "ACCOUNTNUM = @AccountNum AND DATAAREAID = @DataAreaId"
             };
 
-            string accountNum = cust.AccountNumber;
+            string accountNum = customer.AccountNumber;
             string dataAreaId = request.RequestContext.GetChannelConfiguration().InventLocationDataAreaId;
 
             query.Parameters["@AccountNum"] = accountNum;
@@ -64,7 +64,7 @@ namespace SRF.CommerceRuntime.Triggers.CustTableExtension
             using (var databaseContext = new DatabaseContext(request.RequestContext))
             {
                 PagedResult<ExtensionsEntity> extensions = await databaseContext.ReadEntityAsync<ExtensionsEntity>(query).ConfigureAwait(false);
-                ExtensionsEntity extension = extensions.Results.FirstOrDefault(r => string.Equals(r.GetProperty("ACCOUNTNUM").ToString(), cust.AccountNumber, StringComparison.OrdinalIgnoreCase));
+                ExtensionsEntity extension = extensions.Results.FirstOrDefault(r => string.Equals(r.GetProperty("ACCOUNTNUM").ToString(), customer.AccountNumber, StringComparison.OrdinalIgnoreCase));
                 if (extension != null)
                 {
                     var properties = extension?.GetProperties();
@@ -77,27 +77,27 @@ namespace SRF.CommerceRuntime.Triggers.CustTableExtension
 
                     if (LATCODocumentType != null)
                     {
-                        cust.SetProperty(LATCODocumentTypePropertyName, LATCODocumentType);
+                        customer.SetProperty(LATCODocumentTypePropertyName, LATCODocumentType);
                     }
                     if (LATCOContributorType != null)
                     {
-                        cust.SetProperty(LATCOContributorTypePropertyName, LATCOContributorType);
+                        customer.SetProperty(LATCOContributorTypePropertyName, LATCOContributorType);
                     }
                     if (LATCOActivityCIIUId != null)
                     {
-                        cust.SetProperty(LATCOActivityCIIUIdPropertyName, LATCOActivityCIIUId);
+                        customer.SetProperty(LATCOActivityCIIUIdPropertyName, LATCOActivityCIIUId);
                     }
                     if (LATCOIvaRegime != null)
                     {
-                        cust.SetProperty(LATCOIvaRegimePropertyName, LATCOIvaRegime);
+                        customer.SetProperty(LATCOIvaRegimePropertyName, LATCOIvaRegime);
                     }
                     if (LATCOObligationCode != null)
                     {
-                        cust.SetProperty(LATCOObligationCodePropertyName, LATCOObligationCode);
+                        customer.SetProperty(LATCOObligationCodePropertyName, LATCOObligationCode);
                     }
                     if (IDENTIFICATIONNUMBER != null)
                     {
-                        cust.SetProperty(IDENTIFICATIONNUMBERPropertyName, IDENTIFICATIONNUMBER);
+                        customer.SetProperty(IDENTIFICATIONNUMBERPropertyName, IDENTIFICATIONNUMBER);
                     }
                 }
             }

@@ -4,6 +4,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Triggers\LATCOBasicDocumentType\**" />
+    <EmbeddedResource Remove="Triggers\LATCOBasicDocumentType\**" />
+    <None Remove="Triggers\LATCOBasicDocumentType\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Runtime" Version="$(CommerceSdkPackagesVersion)" />

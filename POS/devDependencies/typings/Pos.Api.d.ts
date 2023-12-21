@@ -2536,19 +2536,6 @@ declare module "PosApi/Extend/Triggers/InventoryTriggers" {
     export abstract class PreUpdateInventoryAdjustmentDocumentLineNoteTrigger extends CancelableTriggerBase<IPreUpdateInventoryAdjustmentDocumentLineNoteTriggerOptions> {
         abstract execute(options: IPreUpdateInventoryAdjustmentDocumentLineNoteTriggerOptions): Promise<CancelableTriggerResult<IPreUpdateInventoryAdjustmentDocumentLineNoteTriggerOptions>>;
     }
-    /**
-     * Provides the interface for pre InventoryDocumentProductLocationSelectionTrigger options.
-     */
-    export import IPreInventoryDocumentProductLocationSelectionTriggerOptions = Commerce.Triggers.IPreInventoryDocumentProductLocationSelectionTriggerOptions;
-    export abstract class PreInventoryDocumentProductLocationSelectionTrigger extends CancelableTriggerBase<IPreInventoryDocumentProductLocationSelectionTriggerOptions> {
-        abstract execute(options: IPreInventoryDocumentProductLocationSelectionTriggerOptions): Promise<CancelableTriggerResult<IPreInventoryDocumentProductLocationSelectionTriggerOptions>>;
-    }
-    /**
-     * Provides the interface for post InventoryDocumentProductLocationSelectionTrigger options.
-     */
-    export import IPostInventoryDocumentProductLocationSelectionTriggerOptions = Commerce.Triggers.IPostInventoryDocumentProductLocationSelectionTriggerOptions;
-    export abstract class PostInventoryDocumentProductLocationSelectionTrigger extends NonCancelableTriggerBase<IPostInventoryDocumentProductLocationSelectionTriggerOptions> {
-    }
 }
 declare module "PosApi/Extend/Triggers/OperationTriggers" {
     import { CancelableTriggerBase, NonCancelableTriggerBase } from "PosApi/Extend/Triggers/Triggers";
@@ -4970,7 +4957,7 @@ declare module "PosApi/Extend/Views/SalesInvoicesView" {
 }
 declare module "PosApi/Extend/Views/SearchOrdersView" {
     import { ICustomListColumn } from "PosApi/Extend/Views/CustomListColumns";
-    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+    import { ClientEntities } from "PosApi/Entities";
     import { IMessageChannelEndpoint } from "PosApi/Framework/Messaging";
     import { ExtensionCommandBase, IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
     export import ISerchOrdersExtensionCommandState = Commerce.Extensibility.ISerchOrdersExtensionCommandState;
@@ -4995,11 +4982,6 @@ declare module "PosApi/Extend/Views/SearchOrdersView" {
          * @deprecated
          */
         protected orderSelectionHandler: (data: SearchOrdersSelectedData) => void;
-        /**
-         * The handler for the orders selected message.
-         * @remarks Derived classes should set the handler to execute functionality when a "ListOfSelectedOrdersChanged" message is received.
-         */
-        protected listOfSelectedOrdersChangedHandler: (salesOrders: ProxyEntities.SalesOrder[]) => void;
         /**
          * The handler for the order selection cleared message.
          * @remarks Derived classes should set the handler to execute functionality when a "OrderSelectionCleared" message is received.

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ScaleUnit.LATCO.Installer\\ScaleUnit.LATCO.Installer.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ScaleUnit.LATCO.Installer\\ScaleUnit.LATCO.Installer.csproj",
         "projectName": "ScaleUnit.LATCO.Installer",
@@ -50,7 +50,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"

@@ -2,81 +2,10 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Azure.Core/1.14.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
-          "System.Buffers": "4.5.1",
-          "System.Diagnostics.DiagnosticSource": "4.6.0",
-          "System.Memory": "4.5.4",
-          "System.Memory.Data": "1.0.2",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Azure.Identity/1.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Core": "1.14.0",
-          "Microsoft.Identity.Client": "4.30.1",
-          "Microsoft.Identity.Client.Extensions.Msal": "2.18.4",
-          "System.Memory": "4.5.4",
-          "System.Security.Cryptography.ProtectedData": "4.5.0",
-          "System.Text.Json": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
       "knockoutjs/3.5.1": {
         "type": "package"
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.CSharp/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/Microsoft.CSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        }
-      },
-      "Microsoft.Dynamics.Commerce.Diagnostics/10.13.23290.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "1.1.1",
@@ -101,10 +30,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Resources.Strings/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Resources.Strings/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.12.23177.1-preview"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.dll": {
@@ -117,12 +46,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Data/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Data/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.dll": {
@@ -135,13 +64,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Azure.Identity": "1.4.0",
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -155,12 +83,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.dll": {
@@ -173,11 +101,11 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Entities/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Entities/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.dll": {
@@ -190,10 +118,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Framework/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Framework/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.12.23177.1-preview",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1",
           "System.Linq.Parallel": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
           "System.Security.Principal": "4.3.0",
@@ -210,10 +138,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.dll": {
@@ -226,12 +154,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.dll": {
@@ -244,12 +172,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.dll": {
@@ -262,12 +190,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.dll": {
@@ -280,38 +208,38 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {
         "type": "package",
         "build": {
           "build/_._": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Pos/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Pos/9.45.23355.2": {
         "type": "package",
         "build": {
           "build/_._": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Resources.Strings": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Services.Messages": "[9.48.23326.1-preview, 9.49.0)",
+          "Microsoft.Dynamics.Commerce.Resources.Strings": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Services.Messages": "[9.45.23313.4, 9.46.0)",
           "System.ComponentModel.Annotations": "4.6.0"
         },
         "build": {
           "build/_._": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit/9.45.23355.2": {
         "type": "package",
         "build": {
           "build/Microsoft.Dynamics.Commerce.Sdk.ScaleUnit.props": {},
@@ -439,51 +367,6 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.30.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "NETStandard.Library": "1.6.1",
-          "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Process": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Private.Uri": "4.3.2",
-          "System.Runtime.Serialization.Formatters": "4.3.0",
-          "System.Runtime.Serialization.Json": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
-          "System.Security.SecureString": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
-          "System.Xml.XmlDocument": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.30.0",
-          "System.Security.Cryptography.ProtectedData": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.1": {
         "type": "package",
         "compile": {
@@ -493,7 +376,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -506,19 +389,6 @@
         "type": "package",
         "build": {
           "build/_._": {}
-        }
-      },
-      "Microsoft.Win32.Primitives/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.Win32.Registry/4.7.0": {
@@ -757,7 +627,7 @@
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Buffers.dll": {
+          "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -803,45 +673,6 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "System.Collections.NonGeneric/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Collections.NonGeneric.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {}
-        }
-      },
-      "System.Collections.Specialized/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Globalization.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {}
-        }
-      },
       "System.ComponentModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -865,50 +696,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
-        }
-      },
-      "System.ComponentModel.Primitives/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.ComponentModel": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.ComponentModel.Primitives.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "System.ComponentModel.TypeConverter/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.ComponentModel": "4.3.0",
-          "System.ComponentModel.Primitives": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.ComponentModel.TypeConverter.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.5/_._": {}
         }
       },
       "System.Composition/1.2.0": {
@@ -1024,50 +811,13 @@
           "System.Memory": "4.5.3"
         },
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/netstandard1.3/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
           "lib/netstandard1.3/_._": {
             "related": ".xml"
-          }
-        }
-      },
-      "System.Diagnostics.Process/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "Microsoft.Win32.Registry": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Thread": "4.3.0",
-          "System.Threading.ThreadPool": "4.3.0",
-          "runtime.native.System": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.4/System.Diagnostics.Process.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/osx/lib/netstandard1.4/_._": {
-            "assetType": "runtime",
-            "rid": "osx"
           }
         }
       },
@@ -1097,33 +847,6 @@
           }
         }
       },
-      "System.Dynamic.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {}
-        }
-      },
       "System.Globalization/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1132,7 +855,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Globalization.dll": {
+          "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
         }
@@ -1238,36 +961,6 @@
           "lib/netstandard1.6/_._": {}
         }
       },
-      "System.Linq.Expressions/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.6/System.Linq.Expressions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.6/_._": {}
-        }
-      },
       "System.Linq.Parallel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1299,24 +992,7 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Memory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
           "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Memory.Data/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Memory.Data.dll": {
             "related": ".xml"
           }
         },
@@ -1380,10 +1056,10 @@
           }
         }
       },
-      "System.Numerics.Vectors/4.5.0": {
+      "System.Numerics.Vectors/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Numerics.Vectors.dll": {
+          "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -1391,24 +1067,6 @@
           "lib/netstandard2.0/_._": {
             "related": ".xml"
           }
-        }
-      },
-      "System.ObjectModel/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.ObjectModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {}
         }
       },
       "System.Private.DataContractSerialization/4.3.0": {
@@ -1447,16 +1105,6 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "System.Private.Uri/4.3.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3"
-        },
-        "compile": {
-          "ref/netstandard/_._": {}
-        }
-      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1467,7 +1115,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Reflection.dll": {
+          "ref/netstandard1.5/_._": {
             "related": ".xml"
           }
         }
@@ -1545,7 +1193,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Primitives.dll": {
+          "ref/netstandard1.0/_._": {
             "related": ".xml"
           }
         }
@@ -1662,22 +1310,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/_._": {}
-        }
-      },
-      "System.Runtime.Serialization.Formatters/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Formatters.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/_._": {}
         }
       },
       "System.Runtime.Serialization.Json/4.3.0": {
@@ -1908,26 +1540,6 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/_._": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Security.Cryptography.X509Certificates/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2002,30 +1614,6 @@
           }
         }
       },
-      "System.Security.SecureString/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Security.SecureString.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/_._": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Text.Encoding/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2071,45 +1659,6 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Encodings.Web/4.7.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Json/4.6.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
-          "System.Buffers": "4.5.0",
-          "System.Memory": "4.5.3",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
-          "System.Text.Encodings.Web": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
             "related": ".xml"
           }
         }
@@ -2161,49 +1710,22 @@
           }
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {
+      "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Threading.Thread/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/_._": {}
-        }
-      },
-      "System.Threading.ThreadPool/4.3.0": {
-        "type": "package",
-        "dependencies": {
+          "System.Collections": "4.3.0",
           "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0"
+          "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
+          "lib/netstandard1.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -2251,7 +1773,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.XDocument.dll": {
+          "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
         },
@@ -2274,7 +1796,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.XmlDocument.dll": {
+          "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
         },
@@ -2312,11 +1834,11 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "ChannelDatabase/9.48.0": {
+      "ChannelDatabase/9.45.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": "[9.48.0-0, 9.49.0)"
+          "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": "[9.45.0, 9.46.0)"
         },
         "compile": {
           "bin/placeholder/ChannelDatabase.dll": {}
@@ -2325,11 +1847,11 @@
           "bin/placeholder/ChannelDatabase.dll": {}
         }
       },
-      "CommerceRuntime/9.48.0": {
+      "CommerceRuntime/9.45.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Sdk.Runtime": "[9.48.0-0, 9.49.0)"
+          "Microsoft.Dynamics.Commerce.Sdk.Runtime": "[9.45.0, 9.46.0)"
         },
         "compile": {
           "bin/placeholder/CommerceRuntime.dll": {}
@@ -2338,12 +1860,12 @@
           "bin/placeholder/CommerceRuntime.dll": {}
         }
       },
-      "POS/9.48.0": {
+      "POS/9.45.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "CommerceRuntime": "9.48.0",
-          "Microsoft.Dynamics.Commerce.Sdk.Pos": "[9.48.0-0, 9.49.0)",
+          "CommerceRuntime": "9.45.0",
+          "Microsoft.Dynamics.Commerce.Sdk.Pos": "[9.45.0, 9.46.0)",
           "Microsoft.TypeScript.MSBuild": "4.0.0",
           "knockoutjs": "3.5.0"
         },
@@ -2357,44 +1879,6 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.14.0": {
-      "sha512": "kUMUOZX4FcmfHmy7OjyP5LovO5FMXco9uUYB76l77mtqMVbZ0cLobv+XCy/j6LpStc8cZo2sI1+dMXhk0YROEQ==",
-      "type": "package",
-      "path": "azure.core/1.14.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.core.1.14.0.nupkg.sha512",
-        "azure.core.nuspec",
-        "lib/net461/Azure.Core.dll",
-        "lib/net461/Azure.Core.xml",
-        "lib/net5.0/Azure.Core.dll",
-        "lib/net5.0/Azure.Core.xml",
-        "lib/netcoreapp2.1/Azure.Core.dll",
-        "lib/netcoreapp2.1/Azure.Core.xml",
-        "lib/netstandard2.0/Azure.Core.dll",
-        "lib/netstandard2.0/Azure.Core.xml",
-        "pkgicon.png"
-      ]
-    },
-    "Azure.Identity/1.4.0": {
-      "sha512": "vvjdoDQb9WQyLkD1Uo5KFbwlW7xIsDMihz3yofskym2SimXswbSXuK7QSR1oHnBLBRMdamnVHLpSKQZhJUDejg==",
-      "type": "package",
-      "path": "azure.identity/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.identity.1.4.0.nupkg.sha512",
-        "azure.identity.nuspec",
-        "lib/netstandard2.0/Azure.Identity.dll",
-        "lib/netstandard2.0/Azure.Identity.xml",
-        "pkgicon.png"
-      ]
-    },
     "knockoutjs/3.5.1": {
       "sha512": "5Acbwk98GvNEevZdAWANyKd3UZWXh0ULy+nlfF2K7Qe47oQbSsEVWD9K6wddXGPn/dmeVy67WnKi8H9Z+HpS1A==",
       "type": "package",
@@ -2408,245 +1892,153 @@
         "knockoutjs.nuspec"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
-      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+    "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
+      "sha512": "DRhWUTCCuf2XgyKxu1fAnr+iUQki6FgClQdlDv1jHMPEXnnP/18ZjHmlWZby5a7LNegYYLen0KF16GQu5UZvBA==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
-        "microsoft.bcl.asyncinterfaces.nuspec",
-        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "type": "package",
-      "path": "microsoft.csharp/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/Microsoft.CSharp.dll",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.3/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/uap10.0.16299/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
-        "microsoft.csharp.nuspec",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/Microsoft.CSharp.dll",
-        "ref/netcore50/Microsoft.CSharp.xml",
-        "ref/netcore50/de/Microsoft.CSharp.xml",
-        "ref/netcore50/es/Microsoft.CSharp.xml",
-        "ref/netcore50/fr/Microsoft.CSharp.xml",
-        "ref/netcore50/it/Microsoft.CSharp.xml",
-        "ref/netcore50/ja/Microsoft.CSharp.xml",
-        "ref/netcore50/ko/Microsoft.CSharp.xml",
-        "ref/netcore50/ru/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/Microsoft.CSharp.dll",
-        "ref/netstandard1.0/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
-        "ref/netstandard2.0/Microsoft.CSharp.dll",
-        "ref/netstandard2.0/Microsoft.CSharp.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/uap10.0.16299/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.Dynamics.Commerce.Diagnostics/10.13.23290.1-preview": {
-      "sha512": "1kNMFgb9F84SUhw1XYoeDtwj+IXmlwL37Ejy7AJ0AGeR5dTkZsWx+DQK65YkcNpXHjNPkRb70i/T2Okg3AfFaw==",
-      "type": "package",
-      "path": "microsoft.dynamics.commerce.diagnostics/10.13.23290.1-preview",
+      "path": "microsoft.dynamics.commerce.diagnostics/10.11.23033.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.xml",
-        "microsoft.dynamics.commerce.diagnostics.10.13.23290.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.diagnostics.10.11.23033.1.nupkg.sha512",
         "microsoft.dynamics.commerce.diagnostics.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Resources.Strings/10.14.23248.1-preview": {
-      "sha512": "vrH0hOEObv3zKT0JaTrsC+zcHPkVlJX+t7EZHGP/ukIWurki0s9YUTOhUJO//GRDIy5omJKs+z7k3KmAGwZqhw==",
+    "Microsoft.Dynamics.Commerce.Resources.Strings/10.12.23229.1": {
+      "sha512": "eyclzdEGSIIPNu7ASWV8DoOGVfVOqXQnoGEgfse1MhvU4l2WXfyznUkB9T+2L53j0fXFm9mx+jnj6NE2NziEWw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.resources.strings/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.resources.strings/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.xml",
-        "microsoft.dynamics.commerce.resources.strings.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.resources.strings.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.resources.strings.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Data/9.48.23326.1-preview": {
-      "sha512": "PIYUKyMGJDuQ/yp4z11WbtJTGSCtGpgi7jI/WJMcSvE1MkXkrwCupD/5K7aEzjCDP3wu1RFEHKQBllURb4l4Gg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Data/9.45.23313.4": {
+      "sha512": "b/ZMb0pF2DYkEj5v3D2bwiztOIl480lHCeRs+VX/6oQpmlxZIeL4ZU5yeuOVJnuK5zZSXE9z6We9MROFn9GmXg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.data/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.data/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.xml",
-        "microsoft.dynamics.commerce.runtime.data.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.data.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.data.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.48.23326.1-preview": {
-      "sha512": "KIaaUHX0cFVhBhW7K8hgYMnAi12r1mifezs60axeA2B5xjAV9sWj3Mzz5v6MwZeeQD++OhJ72+IgSktf/shsLA==",
+    "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.45.23313.4": {
+      "sha512": "7+lwy/E2lJBLzffdM5+nlnm7JEhmbPVnFM1rjDn9YSHtobSPlY8oeiHRMCPswu0kdiW33IDxsfXTbJyfBDho2w==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.xml",
-        "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.48.23326.1-preview": {
-      "sha512": "aX1GRmWM2JYeTMpQIEcAbUh4H9r7sDZMUKc5zvrUiVgxT7kn58frTwcnkPEpvCjl5jLywXlzIaHn1Yb0ZaE1dA==",
+    "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.45.23313.4": {
+      "sha512": "LakSwNP17qR8/ceX0GZmgfkQq5eXFLg7ZMYg86HYsaKdCKUzfjwDJDihCdG2KjeQJZCy4NeT9uZmVS7W11bZgw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.dataservices.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.dataservices.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.dataservices.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.dataservices.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.dataservices.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Entities/9.48.23326.1-preview": {
-      "sha512": "mAdWqe+lc+Vw+Gous3JnYxxzEUlAkLJ3kRAnR/4QB14qglPahlKaDB+2S81jyk0/+W2lp0bgMt/ACWtIPfOVEA==",
+    "Microsoft.Dynamics.Commerce.Runtime.Entities/9.45.23313.4": {
+      "sha512": "1UA+SEaCvnulRmmoE15ynOTlRhvNjHH3a5IthAzmJMGReqNPHucxuiRDsH1K6QajWJqs53egJTwBGElehpSXrQ==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.entities/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.entities/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.xml",
-        "microsoft.dynamics.commerce.runtime.entities.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.entities.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.entities.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Framework/10.14.23248.1-preview": {
-      "sha512": "PKKLTlvXpOGJ8DMDgH5Cy/uawxJnEW40rWZtSkVTVkQlilLwSqc8rGLKg5VCjdl7Rq5yJaQWe4cci2VD66cZ7g==",
+    "Microsoft.Dynamics.Commerce.Runtime.Framework/10.12.23229.1": {
+      "sha512": "VR1uDsgwrpn8wxDPPtMQGjysUxthn/awBW1OuC82gJudN84chz1B07uxXkHapQP3En2iItx96/MSdSPPw063Rg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.framework/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.framework/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.xml",
-        "microsoft.dynamics.commerce.runtime.framework.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.framework.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.framework.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.14.23248.1-preview": {
-      "sha512": "xI3/iw5CN7CLX/0QR17ouCk/DMQVlz37eBC7O8BM2xRn9UvOm64WRZFJ9qAd69K/1Zu7nN3f1K3l2TKH76PIVQ==",
+    "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.12.23229.1": {
+      "sha512": "Hi7e4AOWSmAT9ftOoYZNmk4cZa6KIn0NeQHcElE8ZdoEbQo76Evj8YXMl4E1e1XtrstG6n4JbkczRPuQvod0lQ==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.hosting.contracts/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.hosting.contracts/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.xml",
-        "microsoft.dynamics.commerce.runtime.hosting.contracts.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.hosting.contracts.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.hosting.contracts.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Messages/9.48.23326.1-preview": {
-      "sha512": "wjqEIl7akA41NrkK01QD5FY0d1vtHmTdpk6xADNx4mlBK4h0DYK98C6FSyW5iR/ethyu862XmpjtCsEHLhMuNg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Messages/9.45.23313.4": {
+      "sha512": "opHeGb7UHjlJmep+B3Bp89gxMDUgB/Zv0AoDzLBibJBUzszjdRb2NZnniXa/JrAe3X1IMyhzsioQMi1nxF9u/w==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.48.23326.1-preview": {
-      "sha512": "YF0Ys7UvDllQlXXD/CYe7sE0oL2d3+1AHmCdxdzpLqNRzd+E2o9MtSyBCogfjRNwh3il/zkCnCl2znqCc4kWhg==",
+    "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.45.23313.4": {
+      "sha512": "8w8dfTafFyzXv0/RudjM3efi4g+fihlBlyGW6oht4L/cGwfJhOtC5JGaVr3qdxV1KJAQ2Nr4mWV+y3dkwYJpyg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.realtimeservices.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.realtimeservices.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.realtimeservices.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.realtimeservices.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.realtimeservices.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.48.23326.1-preview": {
-      "sha512": "9B+sMPzzTwYH43R16gDOxPfM9rw9vIuInPO5cbce98wSs4e+LzopuajRxFKf9i2MfF2WnkXNOSDYnQOYAKIvyg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.45.23313.4": {
+      "sha512": "6yzKPAdD/OCTnf6rV5QI8SsOujs230T8GdO/Mant3HLZCHPYpj8Pk+vl09Yi7a6qTPihPK65fg5WVUrngpxY6A==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.services.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.services.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.services.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.services.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.services.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {
-      "sha512": "BYT6mQFEmRsQE6ymKbyajngD3fHIMpKu6a3aCV7jQOmK8ai/9bLhT0eSOeY/4nBrZbTqk7EqeORhc1BLmaPMCA==",
+    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {
+      "sha512": "X8oikZpK9BW5o61gN4YFXEDAPidh44foWTO19bkRZfcExEwNrVt+C78qY9EGJDjlg0PAvP/FNx0MHiFy9Tndqw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.45.23355.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.txt",
@@ -2654,14 +2046,14 @@
         "build/Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase.targets",
         "build/Microsoft.Dynamics.Commerce.Sdk.Common.props",
         "build/Microsoft.Dynamics.Commerce.Sdk.Common.targets",
-        "microsoft.dynamics.commerce.sdk.channeldatabase.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.channeldatabase.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.channeldatabase.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.Pos/9.48.23326.5-preview": {
-      "sha512": "qAkfbdSbm7pQgyuPQtct/YDNLX6yBJkPD5W1Nfiual98UKC+a9HbHHnxq517U8jqI+xVGyrw1SSAnAMJa0Dbhg==",
+    "Microsoft.Dynamics.Commerce.Sdk.Pos/9.45.23355.2": {
+      "sha512": "q1it3O91eQi13NBc+nm/3uvdZHYNW8oIKs5bQHoBxbR1WWLkmtjtjY/QKFWW7Jlap+bB8P8ByeKcQBsyF8S9bA==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.pos/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.pos/9.45.23355.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2714,16 +2106,16 @@
         "contentFiles/manifestSchema.json",
         "contentFiles/payments.d.ts",
         "contentFiles/pos-tsconfig-base.json",
-        "microsoft.dynamics.commerce.sdk.pos.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.pos.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.pos.nuspec",
         "tools/Microsoft.Dynamics.Commerce.Sdk.Pos.dll",
         "tools/Microsoft.Dynamics.Commerce.Sdk.Pos.xml"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.48.23326.5-preview": {
-      "sha512": "eRXiz1XqdfET13zy1H5FAgP0OfvyVbPelIiOs2l5ZBdE92OXzU1TtVBtLHk23TtRk72RYThPQ8U4PjLDdX1s3Q==",
+    "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.45.23355.2": {
+      "sha512": "Y/dG4PLRwOV4FABtFs5ZgocPyIuCAMdC1DbVeE1Ub59B6j0i9r3dv2Q8UXWxJXuGC1YcyiqKLqL1oHJE3xIUFw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.runtime/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.runtime/9.45.23355.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.txt",
@@ -2733,14 +2125,14 @@
         "build/Microsoft.Dynamics.Commerce.Sdk.Runtime.props",
         "build/Microsoft.Dynamics.Commerce.Sdk.Runtime.targets",
         "build/Microsoft.Dynamics.Commerce.Sdk.StoreCommerce.MSBuildTasks.dll",
-        "microsoft.dynamics.commerce.sdk.runtime.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.runtime.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.runtime.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit/9.48.23326.5-preview": {
-      "sha512": "zJbNMtCrr8OYa9pEMFcQZ6KeY9vbweRFOnxbR2cs4WzURyhvidqyWGBgQSZCVHWxGOwxuy4FE06p/o1PAfQS2w==",
+    "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit/9.45.23355.2": {
+      "sha512": "ab08rIjC+zFYmOWZrXLK1tRJV4809zdKI3zampt07So3GABdT+ZU+NLYEtHamU/syZtixFRbpXv3kakxdYAXiw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.scaleunit/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.scaleunit/9.45.23355.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2751,7 +2143,7 @@
         "build/Microsoft.Dynamics.Commerce.Sdk.ScaleUnit.props",
         "build/Microsoft.Dynamics.Commerce.Sdk.ScaleUnit.targets",
         "build/manifest.json",
-        "microsoft.dynamics.commerce.sdk.scaleunit.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.scaleunit.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.scaleunit.nuspec",
         "tools/Microsoft.Dynamics.Commerce.Sdk.ScaleUnit.dll",
         "tools/build/Microsoft.Dynamics.Commerce.Sdk.ScaleUnit.Nuget.props"
@@ -2850,55 +2242,6 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
-    "Microsoft.Identity.Client/4.30.1": {
-      "sha512": "xk8tJeGfB2yD3+d7a0DXyV7/HYyEG10IofUHYHoPYKmDbroi/j9t1BqSHgbq1nARDjg7m8Ki6e21AyNU7e/R4Q==",
-      "type": "package",
-      "path": "microsoft.identity.client/4.30.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
-        "lib/monoandroid90/Microsoft.Identity.Client.dll",
-        "lib/monoandroid90/Microsoft.Identity.Client.xml",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
-        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.dll",
-        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
-        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.3/Microsoft.Identity.Client.xml",
-        "lib/uap10.0/Microsoft.Identity.Client.dll",
-        "lib/uap10.0/Microsoft.Identity.Client.pri",
-        "lib/uap10.0/Microsoft.Identity.Client.xml",
-        "lib/xamarinios10/Microsoft.Identity.Client.dll",
-        "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "lib/xamarinmac20/Microsoft.Identity.Client.dll",
-        "lib/xamarinmac20/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.30.1.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
-      "sha512": "HpG4oLwhQsy0ce7OWq9iDdLtJKOvKRStIKoSEOeBMKuohfuOWNDyhg8fMAJkpG/kFeoe4J329fiMHcJmmB+FPw==",
-      "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/2.18.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512",
-        "microsoft.identity.client.extensions.msal.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.1": {
       "sha512": "TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
       "type": "package",
@@ -2914,17 +2257,17 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Targets/1.1.3": {
-      "sha512": "3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
-      "path": "microsoft.netcore.targets/1.1.3",
+      "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.3.nupkg.sha512",
+        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
       ]
@@ -3029,44 +2372,6 @@
         "tools/tsc/watchGuard.js",
         "tools/tsc/zh-CN/diagnosticMessages.generated.json",
         "tools/tsc/zh-TW/diagnosticMessages.generated.json"
-      ]
-    },
-    "Microsoft.Win32.Primitives/4.3.0": {
-      "sha512": "9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
-      "type": "package",
-      "path": "microsoft.win32.primitives/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/Microsoft.Win32.Primitives.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "microsoft.win32.primitives.4.3.0.nupkg.sha512",
-        "microsoft.win32.primitives.nuspec",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/Microsoft.Win32.Primitives.dll",
-        "ref/netstandard1.3/Microsoft.Win32.Primitives.dll",
-        "ref/netstandard1.3/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/de/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/es/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/fr/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/it/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/ja/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/ko/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/ru/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/zh-hans/Microsoft.Win32.Primitives.xml",
-        "ref/netstandard1.3/zh-hant/Microsoft.Win32.Primitives.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
       ]
     },
     "Microsoft.Win32.Registry/4.7.0": {
@@ -3685,84 +2990,6 @@
         "system.collections.concurrent.nuspec"
       ]
     },
-    "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
-      "type": "package",
-      "path": "system.collections.nongeneric/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Collections.NonGeneric.dll",
-        "lib/netstandard1.3/System.Collections.NonGeneric.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Collections.NonGeneric.dll",
-        "ref/netstandard1.3/System.Collections.NonGeneric.dll",
-        "ref/netstandard1.3/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/de/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/es/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/fr/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/it/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/ja/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/ko/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/ru/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/zh-hans/System.Collections.NonGeneric.xml",
-        "ref/netstandard1.3/zh-hant/System.Collections.NonGeneric.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.collections.nongeneric.4.3.0.nupkg.sha512",
-        "system.collections.nongeneric.nuspec"
-      ]
-    },
-    "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
-      "type": "package",
-      "path": "system.collections.specialized/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Collections.Specialized.dll",
-        "lib/netstandard1.3/System.Collections.Specialized.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Collections.Specialized.dll",
-        "ref/netstandard1.3/System.Collections.Specialized.dll",
-        "ref/netstandard1.3/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/de/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/es/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/fr/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/it/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ja/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ko/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ru/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/zh-hans/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/zh-hant/System.Collections.Specialized.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.collections.specialized.4.3.0.nupkg.sha512",
-        "system.collections.specialized.nuspec"
-      ]
-    },
     "System.ComponentModel/4.3.0": {
       "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "type": "package",
@@ -3909,98 +3136,6 @@
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
-      "type": "package",
-      "path": "system.componentmodel.primitives/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/System.ComponentModel.Primitives.dll",
-        "lib/netstandard1.0/System.ComponentModel.Primitives.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.ComponentModel.Primitives.dll",
-        "ref/netstandard1.0/System.ComponentModel.Primitives.dll",
-        "ref/netstandard1.0/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/de/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/es/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/fr/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/it/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/ja/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/ko/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/ru/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/zh-hans/System.ComponentModel.Primitives.xml",
-        "ref/netstandard1.0/zh-hant/System.ComponentModel.Primitives.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.componentmodel.primitives.4.3.0.nupkg.sha512",
-        "system.componentmodel.primitives.nuspec"
-      ]
-    },
-    "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
-      "type": "package",
-      "path": "system.componentmodel.typeconverter/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/System.ComponentModel.TypeConverter.dll",
-        "lib/net462/System.ComponentModel.TypeConverter.dll",
-        "lib/netstandard1.0/System.ComponentModel.TypeConverter.dll",
-        "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.ComponentModel.TypeConverter.dll",
-        "ref/net462/System.ComponentModel.TypeConverter.dll",
-        "ref/netstandard1.0/System.ComponentModel.TypeConverter.dll",
-        "ref/netstandard1.0/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/de/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/es/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/fr/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/it/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/ja/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/ko/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/ru/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/zh-hans/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.0/zh-hant/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/System.ComponentModel.TypeConverter.dll",
-        "ref/netstandard1.5/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/de/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/es/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/fr/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/it/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/ja/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/ko/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/ru/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/zh-hans/System.ComponentModel.TypeConverter.xml",
-        "ref/netstandard1.5/zh-hant/System.ComponentModel.TypeConverter.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
-        "system.componentmodel.typeconverter.nuspec"
       ]
     },
     "System.Composition/1.2.0": {
@@ -4287,63 +3422,6 @@
         "version.txt"
       ]
     },
-    "System.Diagnostics.Process/4.3.0": {
-      "sha512": "J0wOX07+QASQblsfxmIMFc9Iq7KTXYL3zs2G/Xc704Ylv3NpuVdo6gij6V3PGiptTxqsK0K7CdXenRvKUnkA2g==",
-      "type": "package",
-      "path": "system.diagnostics.process/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Diagnostics.Process.dll",
-        "lib/net461/System.Diagnostics.Process.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Diagnostics.Process.dll",
-        "ref/net461/System.Diagnostics.Process.dll",
-        "ref/netstandard1.3/System.Diagnostics.Process.dll",
-        "ref/netstandard1.3/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/de/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/es/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/fr/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/it/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/ja/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/ko/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/ru/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/zh-hans/System.Diagnostics.Process.xml",
-        "ref/netstandard1.3/zh-hant/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/System.Diagnostics.Process.dll",
-        "ref/netstandard1.4/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/de/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/es/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/fr/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/it/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/ja/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/ko/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/ru/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/zh-hans/System.Diagnostics.Process.xml",
-        "ref/netstandard1.4/zh-hant/System.Diagnostics.Process.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/linux/lib/netstandard1.4/System.Diagnostics.Process.dll",
-        "runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll",
-        "runtimes/win/lib/net46/System.Diagnostics.Process.dll",
-        "runtimes/win/lib/net461/System.Diagnostics.Process.dll",
-        "runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll",
-        "runtimes/win7/lib/netcore50/_._",
-        "system.diagnostics.process.4.3.0.nupkg.sha512",
-        "system.diagnostics.process.nuspec"
-      ]
-    },
     "System.Diagnostics.Tools/4.3.0": {
       "sha512": "UUvkJfSYJMM6x527dJg2VyWPSRqIVB0Z7dbjHst1zmwTXz5CcXSYJFWRpuigfbO1Lf7yfZiIaEUesfnl/g5EyA==",
       "type": "package",
@@ -4489,77 +3567,6 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
-      ]
-    },
-    "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
-      "type": "package",
-      "path": "system.dynamic.runtime/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Dynamic.Runtime.dll",
-        "lib/netstandard1.3/System.Dynamic.Runtime.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Dynamic.Runtime.dll",
-        "ref/netcore50/System.Dynamic.Runtime.xml",
-        "ref/netcore50/de/System.Dynamic.Runtime.xml",
-        "ref/netcore50/es/System.Dynamic.Runtime.xml",
-        "ref/netcore50/fr/System.Dynamic.Runtime.xml",
-        "ref/netcore50/it/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ja/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ko/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ru/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.0/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.3/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Dynamic.Runtime.dll",
-        "system.dynamic.runtime.4.3.0.nupkg.sha512",
-        "system.dynamic.runtime.nuspec"
       ]
     },
     "System.Globalization/4.3.0": {
@@ -4939,90 +3946,6 @@
         "system.linq.nuspec"
       ]
     },
-    "System.Linq.Expressions/4.3.0": {
-      "sha512": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
-      "type": "package",
-      "path": "system.linq.expressions/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net463/System.Linq.Expressions.dll",
-        "lib/netcore50/System.Linq.Expressions.dll",
-        "lib/netstandard1.6/System.Linq.Expressions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net463/System.Linq.Expressions.dll",
-        "ref/netcore50/System.Linq.Expressions.dll",
-        "ref/netcore50/System.Linq.Expressions.xml",
-        "ref/netcore50/de/System.Linq.Expressions.xml",
-        "ref/netcore50/es/System.Linq.Expressions.xml",
-        "ref/netcore50/fr/System.Linq.Expressions.xml",
-        "ref/netcore50/it/System.Linq.Expressions.xml",
-        "ref/netcore50/ja/System.Linq.Expressions.xml",
-        "ref/netcore50/ko/System.Linq.Expressions.xml",
-        "ref/netcore50/ru/System.Linq.Expressions.xml",
-        "ref/netcore50/zh-hans/System.Linq.Expressions.xml",
-        "ref/netcore50/zh-hant/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/System.Linq.Expressions.dll",
-        "ref/netstandard1.0/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/de/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/es/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/fr/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/it/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/ja/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/ko/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/ru/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/zh-hans/System.Linq.Expressions.xml",
-        "ref/netstandard1.0/zh-hant/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/System.Linq.Expressions.dll",
-        "ref/netstandard1.3/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/de/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/es/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/fr/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/it/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/ja/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/ko/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/ru/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/zh-hans/System.Linq.Expressions.xml",
-        "ref/netstandard1.3/zh-hant/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/System.Linq.Expressions.dll",
-        "ref/netstandard1.6/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/de/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/es/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/fr/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/it/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/ja/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/ko/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/ru/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/zh-hans/System.Linq.Expressions.xml",
-        "ref/netstandard1.6/zh-hant/System.Linq.Expressions.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Linq.Expressions.dll",
-        "system.linq.expressions.4.3.0.nupkg.sha512",
-        "system.linq.expressions.nuspec"
-      ]
-    },
     "System.Linq.Parallel/4.3.0": {
       "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "type": "package",
@@ -5101,24 +4024,6 @@
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Memory.Data/1.0.2": {
-      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
-      "type": "package",
-      "path": "system.memory.data/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "DotNetPackageIcon.png",
-        "README.md",
-        "lib/net461/System.Memory.Data.dll",
-        "lib/net461/System.Memory.Data.xml",
-        "lib/netstandard2.0/System.Memory.Data.dll",
-        "lib/netstandard2.0/System.Memory.Data.xml",
-        "system.memory.data.1.0.2.nupkg.sha512",
-        "system.memory.data.nuspec"
       ]
     },
     "System.Net.Http/4.3.4": {
@@ -5242,10 +4147,10 @@
         "system.net.primitives.nuspec"
       ]
     },
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
       "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
+      "path": "system.numerics.vectors/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5262,15 +4167,12 @@
         "lib/netstandard2.0/System.Numerics.Vectors.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
         "ref/net46/System.Numerics.Vectors.dll",
         "ref/net46/System.Numerics.Vectors.xml",
         "ref/netcoreapp2.0/_._",
@@ -5278,85 +4180,14 @@
         "ref/netstandard1.0/System.Numerics.Vectors.xml",
         "ref/netstandard2.0/System.Numerics.Vectors.dll",
         "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.ObjectModel/4.3.0": {
-      "sha512": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
-      "type": "package",
-      "path": "system.objectmodel/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.ObjectModel.dll",
-        "lib/netstandard1.3/System.ObjectModel.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.ObjectModel.dll",
-        "ref/netcore50/System.ObjectModel.xml",
-        "ref/netcore50/de/System.ObjectModel.xml",
-        "ref/netcore50/es/System.ObjectModel.xml",
-        "ref/netcore50/fr/System.ObjectModel.xml",
-        "ref/netcore50/it/System.ObjectModel.xml",
-        "ref/netcore50/ja/System.ObjectModel.xml",
-        "ref/netcore50/ko/System.ObjectModel.xml",
-        "ref/netcore50/ru/System.ObjectModel.xml",
-        "ref/netcore50/zh-hans/System.ObjectModel.xml",
-        "ref/netcore50/zh-hant/System.ObjectModel.xml",
-        "ref/netstandard1.0/System.ObjectModel.dll",
-        "ref/netstandard1.0/System.ObjectModel.xml",
-        "ref/netstandard1.0/de/System.ObjectModel.xml",
-        "ref/netstandard1.0/es/System.ObjectModel.xml",
-        "ref/netstandard1.0/fr/System.ObjectModel.xml",
-        "ref/netstandard1.0/it/System.ObjectModel.xml",
-        "ref/netstandard1.0/ja/System.ObjectModel.xml",
-        "ref/netstandard1.0/ko/System.ObjectModel.xml",
-        "ref/netstandard1.0/ru/System.ObjectModel.xml",
-        "ref/netstandard1.0/zh-hans/System.ObjectModel.xml",
-        "ref/netstandard1.0/zh-hant/System.ObjectModel.xml",
-        "ref/netstandard1.3/System.ObjectModel.dll",
-        "ref/netstandard1.3/System.ObjectModel.xml",
-        "ref/netstandard1.3/de/System.ObjectModel.xml",
-        "ref/netstandard1.3/es/System.ObjectModel.xml",
-        "ref/netstandard1.3/fr/System.ObjectModel.xml",
-        "ref/netstandard1.3/it/System.ObjectModel.xml",
-        "ref/netstandard1.3/ja/System.ObjectModel.xml",
-        "ref/netstandard1.3/ko/System.ObjectModel.xml",
-        "ref/netstandard1.3/ru/System.ObjectModel.xml",
-        "ref/netstandard1.3/zh-hans/System.ObjectModel.xml",
-        "ref/netstandard1.3/zh-hant/System.ObjectModel.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.objectmodel.4.3.0.nupkg.sha512",
-        "system.objectmodel.nuspec"
       ]
     },
     "System.Private.DataContractSerialization/4.3.0": {
@@ -5373,20 +4204,6 @@
         "runtimes/aot/lib/netcore50/System.Private.DataContractSerialization.dll",
         "system.private.datacontractserialization.4.3.0.nupkg.sha512",
         "system.private.datacontractserialization.nuspec"
-      ]
-    },
-    "System.Private.Uri/4.3.2": {
-      "sha512": "o1+7RJnu3Ik3PazR7Z7tJhjPdE000Eq2KGLLWhqJJKXj04wrS8lwb1OFtDF9jzXXADhUuZNJZlPc98uwwqmpFA==",
-      "type": "package",
-      "path": "system.private.uri/4.3.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/netstandard/_._",
-        "system.private.uri.4.3.2.nupkg.sha512",
-        "system.private.uri.nuspec"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -6207,35 +5024,6 @@
         "system.runtime.numerics.nuspec"
       ]
     },
-    "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
-      "type": "package",
-      "path": "system.runtime.serialization.formatters/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Runtime.Serialization.Formatters.dll",
-        "lib/netstandard1.4/System.Runtime.Serialization.Formatters.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Runtime.Serialization.Formatters.dll",
-        "ref/netstandard1.3/System.Runtime.Serialization.Formatters.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.serialization.formatters.4.3.0.nupkg.sha512",
-        "system.runtime.serialization.formatters.nuspec"
-      ]
-    },
     "System.Runtime.Serialization.Json/4.3.0": {
       "sha512": "CpVfOH0M/uZ5PH+M9+Gu56K0j9lJw3M+PKRegTkcrY/stOIvRUeonggxNrfBYLA5WOHL2j15KNJuTuld3x4o9w==",
       "type": "package",
@@ -6673,47 +5461,6 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.5.0": {
-      "sha512": "wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
-      "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
-        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
-        "system.security.cryptography.protecteddata.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
       "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
       "type": "package",
@@ -6881,47 +5628,6 @@
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Security.SecureString/4.3.0": {
-      "sha512": "PnXp38O9q/2Oe4iZHMH60kinScv6QiiL2XH54Pj2t0Y6c2zKPEiAZsM/M3wBOHLNTBDFP0zfy13WN2M0qFz5jg==",
-      "type": "package",
-      "path": "system.security.securestring/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.SecureString.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.SecureString.dll",
-        "ref/netstandard1.3/System.Security.SecureString.dll",
-        "ref/netstandard1.3/System.Security.SecureString.xml",
-        "ref/netstandard1.3/de/System.Security.SecureString.xml",
-        "ref/netstandard1.3/es/System.Security.SecureString.xml",
-        "ref/netstandard1.3/fr/System.Security.SecureString.xml",
-        "ref/netstandard1.3/it/System.Security.SecureString.xml",
-        "ref/netstandard1.3/ja/System.Security.SecureString.xml",
-        "ref/netstandard1.3/ko/System.Security.SecureString.xml",
-        "ref/netstandard1.3/ru/System.Security.SecureString.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.SecureString.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.SecureString.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Security.SecureString.dll",
-        "runtimes/win/lib/net46/System.Security.SecureString.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.SecureString.dll",
-        "system.security.securestring.4.3.0.nupkg.sha512",
-        "system.security.securestring.nuspec"
       ]
     },
     "System.Text.Encoding/4.3.0": {
@@ -7098,51 +5804,6 @@
         "ref/xamarinwatchos10/_._",
         "system.text.encoding.extensions.4.3.0.nupkg.sha512",
         "system.text.encoding.extensions.nuspec"
-      ]
-    },
-    "System.Text.Encodings.Web/4.7.2": {
-      "sha512": "iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA==",
-      "type": "package",
-      "path": "system.text.encodings.web/4.7.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Text.Encodings.Web.dll",
-        "lib/net461/System.Text.Encodings.Web.xml",
-        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.4.7.2.nupkg.sha512",
-        "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Text.Json/4.6.0": {
-      "sha512": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
-      "type": "package",
-      "path": "system.text.json/4.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Text.Json.dll",
-        "lib/net461/System.Text.Json.xml",
-        "lib/netcoreapp3.0/System.Text.Json.dll",
-        "lib/netcoreapp3.0/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.6.0.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Text.RegularExpressions/4.3.0": {
@@ -7368,119 +6029,21 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+    "System.Threading.Tasks.Extensions/4.3.0": {
+      "sha512": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.2",
+      "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/netcoreapp2.1/_._",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
-      "type": "package",
-      "path": "system.threading.thread/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Threading.Thread.dll",
-        "lib/netcore50/_._",
-        "lib/netstandard1.3/System.Threading.Thread.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Threading.Thread.dll",
-        "ref/netstandard1.3/System.Threading.Thread.dll",
-        "ref/netstandard1.3/System.Threading.Thread.xml",
-        "ref/netstandard1.3/de/System.Threading.Thread.xml",
-        "ref/netstandard1.3/es/System.Threading.Thread.xml",
-        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
-        "ref/netstandard1.3/it/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
-        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
-        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.thread.4.3.0.nupkg.sha512",
-        "system.threading.thread.nuspec"
-      ]
-    },
-    "System.Threading.ThreadPool/4.3.0": {
-      "sha512": "k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
-      "type": "package",
-      "path": "system.threading.threadpool/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Threading.ThreadPool.dll",
-        "lib/netcore50/_._",
-        "lib/netstandard1.3/System.Threading.ThreadPool.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Threading.ThreadPool.dll",
-        "ref/netstandard1.3/System.Threading.ThreadPool.dll",
-        "ref/netstandard1.3/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/de/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/es/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/fr/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/it/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/ja/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/ko/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/ru/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/zh-hans/System.Threading.ThreadPool.xml",
-        "ref/netstandard1.3/zh-hant/System.Threading.ThreadPool.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.threadpool.4.3.0.nupkg.sha512",
-        "system.threading.threadpool.nuspec"
+        "system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec"
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
@@ -7735,17 +6298,17 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "ChannelDatabase/9.48.0": {
+    "ChannelDatabase/9.45.0": {
       "type": "project",
       "path": "../ChannelDatabase/ChannelDatabase.csproj",
       "msbuildProject": "../ChannelDatabase/ChannelDatabase.csproj"
     },
-    "CommerceRuntime/9.48.0": {
+    "CommerceRuntime/9.45.0": {
       "type": "project",
       "path": "../CommerceRuntime/CommerceRuntime.csproj",
       "msbuildProject": "../CommerceRuntime/CommerceRuntime.csproj"
     },
-    "POS/9.48.0": {
+    "POS/9.45.0": {
       "type": "project",
       "path": "../POS/POS.csproj",
       "msbuildProject": "../POS/POS.csproj"
@@ -7753,11 +6316,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "ChannelDatabase >= 9.48.0",
-      "CommerceRuntime >= 9.48.0",
-      "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit >= 9.48.*-* < 9.49.0",
+      "ChannelDatabase >= 9.45.0",
+      "CommerceRuntime >= 9.45.0",
+      "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit >= 9.45.* < 9.46.0",
       "NETStandard.Library >= 2.0.3",
-      "POS >= 9.48.0"
+      "POS >= 9.45.0"
     ]
   },
   "packageFolders": {
@@ -7766,7 +6329,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "9.48.0",
+    "version": "9.45.0",
     "restore": {
       "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ScaleUnit\\ScaleUnit.csproj",
       "projectName": "ScaleUnit",
@@ -7821,7 +6384,7 @@
         "dependencies": {
           "Microsoft.Dynamics.Commerce.Sdk.ScaleUnit": {
             "target": "Package",
-            "version": "[9.48.*-*, 9.49.0)"
+            "version": "[9.45.*, 9.46.0)"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

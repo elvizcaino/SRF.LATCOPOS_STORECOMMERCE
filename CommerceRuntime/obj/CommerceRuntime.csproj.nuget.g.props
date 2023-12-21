@@ -15,8 +15,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.runtime\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Runtime.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.runtime\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Runtime.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.analyzers\10.32.23313.2-preview\build\Microsoft.Dynamics.Commerce.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.analyzers\10.32.23313.2-preview\build\Microsoft.Dynamics.Commerce.Analyzers.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.analyzers\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.analyzers\9.48.23326.5-preview\build\Microsoft.Dynamics.Commerce.Sdk.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.runtime\9.45.23355.2\build\Microsoft.Dynamics.Commerce.Sdk.Runtime.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.runtime\9.45.23355.2\build\Microsoft.Dynamics.Commerce.Sdk.Runtime.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.analyzers\10.32.23313.2\build\Microsoft.Dynamics.Commerce.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.analyzers\10.32.23313.2\build\Microsoft.Dynamics.Commerce.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.analyzers\9.45.23355.2\build\Microsoft.Dynamics.Commerce.Sdk.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.analyzers\9.45.23355.2\build\Microsoft.Dynamics.Commerce.Sdk.Analyzers.props')" />
   </ImportGroup>
 </Project>

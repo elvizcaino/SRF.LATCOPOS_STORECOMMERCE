@@ -186,7 +186,7 @@
           "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "1.1.1",
@@ -211,10 +211,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1-preview, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
@@ -228,14 +228,14 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.8.0",
           "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel": "2.14.0",
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1-preview",
-          "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop": "10.11.23033.1-preview",
-          "Microsoft.Dynamics.Commerce.KeyVault.Contracts": "[10.32.23313.2-preview, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1",
+          "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop": "10.11.23033.1",
+          "Microsoft.Dynamics.Commerce.KeyVault.Contracts": "[10.32.23313.2, 10.33.0)",
           "Microsoft.Extensions.Configuration": "6.0.0",
           "Microsoft.Extensions.Configuration.Binder": "3.1.22",
           "Microsoft.Extensions.Configuration.CommandLine": "3.1.5",
@@ -274,11 +274,11 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Tools.DbUtilities": "[10.32.23313.2-preview, 10.33.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Tools.DbUtilities": "[10.32.23313.2, 10.33.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions.dll": {
@@ -291,7 +291,7 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.KeyVault.Contracts.dll": {
@@ -304,10 +304,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Installers/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Installers/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.dll": {
@@ -320,12 +320,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Sdk.Installers": "[9.48.23326.5-preview, 9.49.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Sdk.Installers": "[9.45.23355.2, 9.46.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.dll": {
@@ -338,12 +338,6 @@
           }
         },
         "contentFiles": {
-          "contentFiles/cs/netstandard2.0/ExtensionInstallAction.cs.pp": {
-            "buildAction": "Compile",
-            "codeLanguage": "cs",
-            "copyToOutput": false,
-            "ppOutputPath": "ExtensionInstallAction.cs"
-          },
           "contentFiles/cs/netstandard2.0/Program.cs": {
             "buildAction": "Compile",
             "codeLanguage": "cs",
@@ -361,7 +355,7 @@
           "build/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.targets": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Build": "15.9.20",
@@ -2499,7 +2493,7 @@
           "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "1.1.1",
@@ -2524,10 +2518,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1-preview, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
@@ -2541,14 +2535,14 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.8.0",
           "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel": "2.14.0",
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1-preview",
-          "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop": "10.11.23033.1-preview",
-          "Microsoft.Dynamics.Commerce.KeyVault.Contracts": "[10.32.23313.2-preview, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1",
+          "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop": "10.11.23033.1",
+          "Microsoft.Dynamics.Commerce.KeyVault.Contracts": "[10.32.23313.2, 10.33.0)",
           "Microsoft.Extensions.Configuration": "6.0.0",
           "Microsoft.Extensions.Configuration.Binder": "3.1.22",
           "Microsoft.Extensions.Configuration.CommandLine": "3.1.5",
@@ -2587,11 +2581,11 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Tools.DbUtilities": "[10.32.23313.2-preview, 10.33.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Tools.DbUtilities": "[10.32.23313.2, 10.33.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions.dll": {
@@ -2604,7 +2598,7 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.KeyVault.Contracts.dll": {
@@ -2617,10 +2611,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Installers/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Installers/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.dll": {
@@ -2633,12 +2627,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions": "[10.32.23313.2-preview, 10.33.0)",
-          "Microsoft.Dynamics.Commerce.Sdk.Installers": "[9.48.23326.5-preview, 9.49.0)"
+          "Microsoft.Dynamics.Commerce.Installers.Framework": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions": "[10.32.23313.2, 10.33.0)",
+          "Microsoft.Dynamics.Commerce.Sdk.Installers": "[9.45.23355.2, 9.46.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.dll": {
@@ -2651,12 +2645,6 @@
           }
         },
         "contentFiles": {
-          "contentFiles/cs/netstandard2.0/ExtensionInstallAction.cs.pp": {
-            "buildAction": "Compile",
-            "codeLanguage": "cs",
-            "copyToOutput": false,
-            "ppOutputPath": "ExtensionInstallAction.cs"
-          },
           "contentFiles/cs/netstandard2.0/Program.cs": {
             "buildAction": "Compile",
             "codeLanguage": "cs",
@@ -2674,7 +2662,7 @@
           "build/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.targets": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Build": "15.9.20",
@@ -4718,88 +4706,88 @@
         "microsoft.data.sqlclient.sni.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1-preview": {
-      "sha512": "q6cf6JEef+a1O/Mnoe59d88UjX50UQUTiCeAQynzIIfZkaWPPn1tuUUf9DUqY1gXFaVhJZuRh6EgxzZZjLIfcw==",
+    "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
+      "sha512": "DRhWUTCCuf2XgyKxu1fAnr+iUQki6FgClQdlDv1jHMPEXnnP/18ZjHmlWZby5a7LNegYYLen0KF16GQu5UZvBA==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.diagnostics/10.11.23033.1-preview",
+      "path": "microsoft.dynamics.commerce.diagnostics/10.11.23033.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.xml",
-        "microsoft.dynamics.commerce.diagnostics.10.11.23033.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.diagnostics.10.11.23033.1.nupkg.sha512",
         "microsoft.dynamics.commerce.diagnostics.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1-preview": {
-      "sha512": "GSoRJGYpZz0w4S2Iq08vtiF+ipiFM53S7g2qDm3LfdhUgobFzEUravgPsRQywVVLv3spKFDRMovh8ClspoVM7w==",
+    "Microsoft.Dynamics.Commerce.Diagnostics.Core.Desktop/10.11.23033.1": {
+      "sha512": "W3W52fGyabyFFgnCcAM8lXHLGdPIbd9n+DJylpXLJyzdJuWLHWnYBgnVfTCmaae4ccb8LxYixg32IrMUjiP8Ig==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.diagnostics.core.desktop/10.11.23033.1-preview",
+      "path": "microsoft.dynamics.commerce.diagnostics.core.desktop/10.11.23033.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.Core.Desktop.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.Core.Desktop.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.Core.Desktop.xml",
-        "microsoft.dynamics.commerce.diagnostics.core.desktop.10.11.23033.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.diagnostics.core.desktop.10.11.23033.1.nupkg.sha512",
         "microsoft.dynamics.commerce.diagnostics.core.desktop.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2-preview": {
-      "sha512": "leYxxZz6jgrkcwsa1mznprA5sJVCvh+oaVlFKgra/hhdgzonWv7uoyh2I2sUsgwbbNuVghQ3t6P5xgs7+YnhnQ==",
+    "Microsoft.Dynamics.Commerce.Installers.Framework/10.32.23313.2": {
+      "sha512": "8Sc9HkP7fyGNIl2EmFDj/iuGz8EyThcfYQoROhKB9H9CGVABvyfZcZaH4slY7jhPAhYcqLAQBb59klR8hJX7Vw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.installers.framework/10.32.23313.2-preview",
+      "path": "microsoft.dynamics.commerce.installers.framework/10.32.23313.2",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.xml",
-        "microsoft.dynamics.commerce.installers.framework.10.32.23313.2-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.installers.framework.10.32.23313.2.nupkg.sha512",
         "microsoft.dynamics.commerce.installers.framework.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2-preview": {
-      "sha512": "yHRdsTL1iy4A6koolwEKYSJHFo2q/HAw6jrPaRsKTwb1qoTYwPJbrCZ5cWOtPraZKdolmWN4w6hZWmTT83cJ+Q==",
+    "Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions/10.32.23313.2": {
+      "sha512": "7fheDJHz5CmE1Qk4FhlbC0SQC9hwfW870+2gmYVwzt1c137Ohpaf6wFEvapiDNN55B+yffIqoDyHxPptqT/kgQ==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.installers.framework.databaseextensions/10.32.23313.2-preview",
+      "path": "microsoft.dynamics.commerce.installers.framework.databaseextensions/10.32.23313.2",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions.xml",
-        "microsoft.dynamics.commerce.installers.framework.databaseextensions.10.32.23313.2-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.installers.framework.databaseextensions.10.32.23313.2.nupkg.sha512",
         "microsoft.dynamics.commerce.installers.framework.databaseextensions.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2-preview": {
-      "sha512": "ofK9lK/t+tNF/pNPWqm3p72Q6WT+xgQr9S6l9fEKxTGH/FISSl3IsfmUgX/XbJhvBCr38t3352MvXkwxit1/sA==",
+    "Microsoft.Dynamics.Commerce.KeyVault.Contracts/10.32.23313.2": {
+      "sha512": "fQziKdnaw4Cy+5BejOcJ4YOlKrXlasRyYH/p/3SNiQheAB+uwIRqznIFLK5Kcadq4qcEm2RNX2hDVcykLWjRVw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.keyvault.contracts/10.32.23313.2-preview",
+      "path": "microsoft.dynamics.commerce.keyvault.contracts/10.32.23313.2",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.KeyVault.Contracts.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.KeyVault.Contracts.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.KeyVault.Contracts.xml",
-        "microsoft.dynamics.commerce.keyvault.contracts.10.32.23313.2-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.keyvault.contracts.10.32.23313.2.nupkg.sha512",
         "microsoft.dynamics.commerce.keyvault.contracts.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.Installers/9.48.23326.5-preview": {
-      "sha512": "4a26B11EZ03ie6IiOjpzy9yKb0ZrLp8yQBkPjzeqeepCtorp6BdpzX3Kd+oFq992Y+IJR8+EI06SZLKA3c8xKw==",
+    "Microsoft.Dynamics.Commerce.Sdk.Installers/9.45.23355.2": {
+      "sha512": "KLbCWGt/Tsh/9aRa6dOowbXW9zJr/kd+WPKnIlbUvWizdg3YapAeHQgFy5UB7EFwQ4s4jrrApW+IJ9so9Zzjvg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.installers/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.installers/9.45.23355.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.txt",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.xml",
-        "microsoft.dynamics.commerce.sdk.installers.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.installers.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.installers.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.48.23326.5-preview": {
-      "sha512": "ToIuYTQVsCNLCy89kP66lThnYdGQ0ucvblnJg1pD+Nc4GS2S7orfMN7kpxY6RV9Sp6OkScSrvmyZnt23d4n/+w==",
+    "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce/9.45.23355.2": {
+      "sha512": "uYdLndlZ627D6ulRPe56Rja/52CafoiEfrB+8IWbrZfTJJEcn1d1d1mn7u7o3uQHMJkDrQYw0vP+9cLH84d9VA==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.installers.storecommerce/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.installers.storecommerce/9.45.23355.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4816,12 +4804,11 @@
         "commands/initDev/tasks.json",
         "contentFiles/app.ico",
         "contentFiles/app.manifest",
-        "contentFiles/cs/netstandard2.0/ExtensionInstallAction.cs.pp",
         "contentFiles/cs/netstandard2.0/Program.cs",
         "contentFiles/cs/netstandard2.0/Setup.cs.pp",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.xml",
-        "microsoft.dynamics.commerce.sdk.installers.storecommerce.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.installers.storecommerce.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.installers.storecommerce.nuspec",
         "tools/Microsoft.Dynamics.Commerce.Diagnostics.Serilog.Console.dll",
         "tools/Microsoft.Dynamics.Commerce.Diagnostics.Serilog.File.dll",
@@ -4833,16 +4820,16 @@
         "tools/Serilog.dll"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2-preview": {
-      "sha512": "g9DQkrqNHOIwghK63wGljrGRFRRbJxsSqw6jDvb8hFu2/y59apU7hW9uRZ+281Ug0m34DKEve0lAhkFEUMNJiQ==",
+    "Microsoft.Dynamics.Commerce.Tools.DbUtilities/10.32.23313.2": {
+      "sha512": "Sn1Qap0PnVsHLjMw9nCBjWbHsbxTJb4X7tBtZ82RYj/N+U+aE8bHVQ6q46GWLwe8LI9Ztq42JXsEhv/bGRGtDw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.tools.dbutilities/10.32.23313.2-preview",
+      "path": "microsoft.dynamics.commerce.tools.dbutilities/10.32.23313.2",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Tools.DbUtilities.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Tools.DbUtilities.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Tools.DbUtilities.xml",
-        "microsoft.dynamics.commerce.tools.dbutilities.10.32.23313.2-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.tools.dbutilities.10.32.23313.2.nupkg.sha512",
         "microsoft.dynamics.commerce.tools.dbutilities.nuspec"
       ]
     },
@@ -9488,7 +9475,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce >= 9.48.*-* < 9.49.0"
+      "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce >= 9.45.* < 9.46.0"
     ]
   },
   "packageFolders": {
@@ -9497,7 +9484,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "9.48.0",
+    "version": "9.45.0",
     "restore": {
       "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\LATCO.StoreCommerce.Installer\\LATCO.StoreCommerce.Installer.csproj",
       "projectName": "LATCO.StoreCommerce.Installer",
@@ -9542,7 +9529,7 @@
         "dependencies": {
           "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce": {
             "target": "Package",
-            "version": "[9.48.*-*, 9.49.0)"
+            "version": "[9.45.*, 9.46.0)"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"

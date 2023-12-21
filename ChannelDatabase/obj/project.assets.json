@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {
         "type": "package",
         "build": {
           "build/Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase.props": {},
@@ -36,10 +36,10 @@
     }
   },
   "libraries": {
-    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.48.23326.5-preview": {
-      "sha512": "BYT6mQFEmRsQE6ymKbyajngD3fHIMpKu6a3aCV7jQOmK8ai/9bLhT0eSOeY/4nBrZbTqk7EqeORhc1BLmaPMCA==",
+    "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase/9.45.23355.2": {
+      "sha512": "X8oikZpK9BW5o61gN4YFXEDAPidh44foWTO19bkRZfcExEwNrVt+C78qY9EGJDjlg0PAvP/FNx0MHiFy9Tndqw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.channeldatabase/9.45.23355.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.txt",
@@ -47,7 +47,7 @@
         "build/Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase.targets",
         "build/Microsoft.Dynamics.Commerce.Sdk.Common.props",
         "build/Microsoft.Dynamics.Commerce.Sdk.Common.targets",
-        "microsoft.dynamics.commerce.sdk.channeldatabase.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.channeldatabase.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.channeldatabase.nuspec"
       ]
     },
@@ -198,7 +198,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase >= 9.48.*-* < 9.49.0",
+      "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase >= 9.45.* < 9.46.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -208,7 +208,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "9.48.0",
+    "version": "9.45.0",
     "restore": {
       "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj",
       "projectName": "ChannelDatabase",
@@ -253,7 +253,7 @@
         "dependencies": {
           "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": {
             "target": "Package",
-            "version": "[9.48.*-*, 9.49.0)"
+            "version": "[9.45.*, 9.46.0)"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

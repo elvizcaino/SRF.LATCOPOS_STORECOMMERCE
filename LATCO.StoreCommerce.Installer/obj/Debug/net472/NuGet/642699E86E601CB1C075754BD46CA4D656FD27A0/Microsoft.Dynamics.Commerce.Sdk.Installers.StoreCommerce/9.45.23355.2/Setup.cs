@@ -5,6 +5,7 @@ namespace Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce
     using System.Linq;
     using System.Reflection;
     using Microsoft.Dynamics.Commerce.Installers.Framework;
+    using Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions;
     using Microsoft.Dynamics.Commerce.Sdk.Installers;
     using Microsoft.Extensions.Configuration;
 
@@ -13,31 +14,12 @@ namespace Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce
     /// </summary>
     public sealed class StoreCommerceExtensionPackageInstallerSetup : ExtensionPackageInstallerSetup
     {
-        private const string StoreCommerceAppProcessName = "Microsoft.Dynamics.Commerce.StoreCommerce";
-        private const string StoreCommerceHardwareStationProcessName = "Microsoft.Dynamics.Commerce.StoreCommerce.HardwareStationServer";
-
         /// <summary>
         /// Initializes a new instance of the <see cref="StoreCommerceExtensionPackageInstallerSetup"/> class.
         /// </summary>
         public StoreCommerceExtensionPackageInstallerSetup() : base(Assembly.GetExecutingAssembly())
         {
             this.InstallerCommandLineOption = new object();
-
-            this.CorePreInstallSteps = new List<IInstallerStep>()
-            {
-                new DynamicStep(async (context) =>
-                {
-                    string closeStoreCommerceStringValue = context.Configuration[nameof(StoreCommerceExtensionInstallAction.CloseStoreCommerceApp)];
-                    if (bool.TryParse(closeStoreCommerceStringValue, out bool closeStoreCommerce) && closeStoreCommerce)
-                    {
-                        KillProcess killStoreCommerceProcessStep = new KillProcess(StoreCommerceAppProcessName);
-                        KillProcess killHardwareStationProcessStep = new KillProcess(StoreCommerceHardwareStationProcessName);
-
-                        await killStoreCommerceProcessStep.Run(context).ConfigureAwait(false);
-                        await killHardwareStationProcessStep.Run(context).ConfigureAwait(false);
-                    }
-                })
-            };
 
             this.CoreInstallSteps = new List<IInstallerStep>()
             {
@@ -64,17 +46,6 @@ namespace Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce
         /// Gets the command line options for Store Commerce extension installer.
         /// </summary>
         public object InstallerCommandLineOption { get; }
-
-        /// <inheritdoc/>
-        public override IEnumerable<Operation> Operations => new Operation[]
-        {
-            new Operation(
-                typeof(StoreCommerceExtensionInstallAction),
-                this.InstallSteps.Select(step => new StepDefinition(step)).ToArray()),
-            new Operation(
-                typeof(UninstallAction),
-                this.UninstallSteps.Select(step => new StepDefinition(step)).ToArray()),
-        };
 
         /// <summary>
         /// Gets a set of Installer Step Context Configuration properties to be persisted once installation is completed.

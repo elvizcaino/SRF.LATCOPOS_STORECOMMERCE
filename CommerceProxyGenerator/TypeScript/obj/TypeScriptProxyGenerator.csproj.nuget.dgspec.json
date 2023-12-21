@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceProxyGenerator\\TypeScript\\TypeScriptProxyGenerator.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceProxyGenerator\\TypeScript\\TypeScriptProxyGenerator.csproj",
         "projectName": "SRF.Commerce.RetailProxy.Extension",
@@ -54,7 +54,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -79,7 +79,7 @@
       }
     },
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceRuntime\\CommerceRuntime.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceRuntime\\CommerceRuntime.csproj",
         "projectName": "CommerceRuntime",
@@ -132,12 +132,12 @@
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "Microsoft.Dynamics.Commerce.Sdk.Runtime": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

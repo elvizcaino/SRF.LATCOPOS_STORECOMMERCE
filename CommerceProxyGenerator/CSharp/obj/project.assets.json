@@ -2,52 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Azure.Core/1.14.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
-          "System.Buffers": "4.5.1",
-          "System.Diagnostics.DiagnosticSource": "4.6.0",
-          "System.Memory": "4.5.4",
-          "System.Memory.Data": "1.0.2",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "lib/net5.0/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Azure.Identity/1.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Core": "1.14.0",
-          "Microsoft.Identity.Client": "4.30.1",
-          "Microsoft.Identity.Client.Extensions.Msal": "2.18.4",
-          "System.Memory": "4.5.4",
-          "System.Security.Cryptography.ProtectedData": "4.5.0",
-          "System.Text.Json": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -65,18 +19,7 @@
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Dynamics.Commerce.Diagnostics/10.13.23290.1-preview": {
+      "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "1.1.1",
@@ -101,16 +44,16 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)",
           "Microsoft.OData.Client": "7.7.3",
           "Newtonsoft.Json": "13.0.2",
           "System.Diagnostics.DiagnosticSource": "5.0.0",
           "System.Runtime.Caching": "4.5.0",
-          "System.Text.Encodings.Web": "6.0.0"
+          "System.Text.Encodings.Web": "5.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.RetailProxy.ScaleUnit.dll": {
@@ -123,10 +66,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Resources.Strings/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Resources.Strings/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.12.23177.1-preview"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.dll": {
@@ -139,12 +82,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Data/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Data/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.dll": {
@@ -157,13 +100,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Azure.Identity": "1.4.0",
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -177,12 +119,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.dll": {
@@ -195,11 +137,11 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Entities/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Entities/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.dll": {
@@ -212,10 +154,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Framework/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Framework/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "10.12.23177.1-preview",
+          "Microsoft.Dynamics.Commerce.Diagnostics": "10.11.23033.1",
           "System.Linq.Parallel": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
           "System.Security.Principal": "4.3.0",
@@ -232,10 +174,10 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.14.23248.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.12.23229.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.dll": {
@@ -248,12 +190,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.dll": {
@@ -266,12 +208,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.dll": {
@@ -284,12 +226,12 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.13.23290.1-preview, 10.14.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)"
+          "Microsoft.Dynamics.Commerce.Diagnostics": "[10.11.23033.1, 10.12.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.dll": {
@@ -302,26 +244,26 @@
           }
         }
       },
-      "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.48.23326.5-preview": {
+      "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.45.23355.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Resources.Strings": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts": "[10.14.23248.1-preview, 10.15.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages": "[9.48.23326.1-preview, 9.49.0)",
-          "Microsoft.Dynamics.Commerce.Runtime.Services.Messages": "[9.48.23326.1-preview, 9.49.0)",
+          "Microsoft.Dynamics.Commerce.Resources.Strings": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Data": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Entities": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Framework": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts": "[10.12.23229.1, 10.13.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages": "[9.45.23313.4, 9.46.0)",
+          "Microsoft.Dynamics.Commerce.Runtime.Services.Messages": "[9.45.23313.4, 9.46.0)",
           "System.ComponentModel.Annotations": "4.6.0"
         },
         "build": {
           "build/_._": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator/10.32.23313.2-preview": {
+      "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator/10.32.23313.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
@@ -340,10 +282,10 @@
           "build/Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.props": {}
         }
       },
-      "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore/9.48.23326.1-preview": {
+      "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore/9.45.23313.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator": "[10.32.23313.2-preview, 10.33.0)"
+          "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator": "[10.32.23313.2, 10.33.0)"
         },
         "build": {
           "build/Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore.targets": {}
@@ -466,36 +408,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client/4.30.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.30.0",
-          "System.Security.Cryptography.ProtectedData": "4.5.0"
-        },
-        "compile": {
-          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {
             "related": ".xml"
           }
         }
@@ -937,13 +849,20 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.CodeDom/4.7.0": {
@@ -1456,32 +1375,6 @@
           "lib/netstandard1.3/System.Linq.Parallel.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "System.Memory.Data/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Net.Http/4.3.4": {
         "type": "package",
         "dependencies": {
@@ -1554,15 +1447,6 @@
           "ref/netstandard1.3/System.Net.Sockets.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -1804,20 +1688,20 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.3.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -2351,28 +2235,16 @@
           }
         }
       },
-      "System.Text.Encodings.Web/6.0.0": {
+      "System.Text.Encodings.Web/5.0.1": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
-            "assetType": "runtime",
-            "rid": "browser"
           }
         }
       },
@@ -2429,13 +2301,22 @@
           }
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {
+      "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/_._": {}
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Timer/4.3.0": {
@@ -2579,11 +2460,11 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "CommerceRuntime/9.48.0": {
+      "CommerceRuntime/9.45.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Dynamics.Commerce.Sdk.Runtime": "[9.48.0-0, 9.49.0)"
+          "Microsoft.Dynamics.Commerce.Sdk.Runtime": "[9.45.0, 9.46.0)"
         },
         "compile": {
           "bin/placeholder/CommerceRuntime.dll": {}
@@ -2595,44 +2476,6 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.14.0": {
-      "sha512": "kUMUOZX4FcmfHmy7OjyP5LovO5FMXco9uUYB76l77mtqMVbZ0cLobv+XCy/j6LpStc8cZo2sI1+dMXhk0YROEQ==",
-      "type": "package",
-      "path": "azure.core/1.14.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.core.1.14.0.nupkg.sha512",
-        "azure.core.nuspec",
-        "lib/net461/Azure.Core.dll",
-        "lib/net461/Azure.Core.xml",
-        "lib/net5.0/Azure.Core.dll",
-        "lib/net5.0/Azure.Core.xml",
-        "lib/netcoreapp2.1/Azure.Core.dll",
-        "lib/netcoreapp2.1/Azure.Core.xml",
-        "lib/netstandard2.0/Azure.Core.dll",
-        "lib/netstandard2.0/Azure.Core.xml",
-        "pkgicon.png"
-      ]
-    },
-    "Azure.Identity/1.4.0": {
-      "sha512": "vvjdoDQb9WQyLkD1Uo5KFbwlW7xIsDMihz3yofskym2SimXswbSXuK7QSR1oHnBLBRMdamnVHLpSKQZhJUDejg==",
-      "type": "package",
-      "path": "azure.identity/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.identity.1.4.0.nupkg.sha512",
-        "azure.identity.nuspec",
-        "lib/netstandard2.0/Azure.Identity.dll",
-        "lib/netstandard2.0/Azure.Identity.xml",
-        "pkgicon.png"
-      ]
-    },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
       "type": "package",
@@ -2650,190 +2493,166 @@
         "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
-      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+    "Microsoft.Dynamics.Commerce.Diagnostics/10.11.23033.1": {
+      "sha512": "DRhWUTCCuf2XgyKxu1fAnr+iUQki6FgClQdlDv1jHMPEXnnP/18ZjHmlWZby5a7LNegYYLen0KF16GQu5UZvBA==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
-        "microsoft.bcl.asyncinterfaces.nuspec",
-        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.Dynamics.Commerce.Diagnostics/10.13.23290.1-preview": {
-      "sha512": "1kNMFgb9F84SUhw1XYoeDtwj+IXmlwL37Ejy7AJ0AGeR5dTkZsWx+DQK65YkcNpXHjNPkRb70i/T2Okg3AfFaw==",
-      "type": "package",
-      "path": "microsoft.dynamics.commerce.diagnostics/10.13.23290.1-preview",
+      "path": "microsoft.dynamics.commerce.diagnostics/10.11.23033.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Diagnostics.xml",
-        "microsoft.dynamics.commerce.diagnostics.10.13.23290.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.diagnostics.10.11.23033.1.nupkg.sha512",
         "microsoft.dynamics.commerce.diagnostics.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit/9.48.23326.1-preview": {
-      "sha512": "DePLRT8hiLWo0YZPQQOkjl+ILftrjY96SZWtnOo/toCeKZtDnobr2K1yd/0m1EjOae3krHtL6zvGMJ28EEsVxw==",
+    "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit/9.45.23313.4": {
+      "sha512": "9gZ0CwiVIj7aOoDQCAMpTodIE73y/JM4GXJTA8bwp4Myha4T6fj9xbvm638ybeZmHxTRxduaVpEYL8FgpKeq7Q==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.proxy.scaleunit/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.proxy.scaleunit/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.RetailProxy.ScaleUnit.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.RetailProxy.ScaleUnit.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.RetailProxy.ScaleUnit.xml",
-        "microsoft.dynamics.commerce.proxy.scaleunit.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.proxy.scaleunit.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.proxy.scaleunit.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Resources.Strings/10.14.23248.1-preview": {
-      "sha512": "vrH0hOEObv3zKT0JaTrsC+zcHPkVlJX+t7EZHGP/ukIWurki0s9YUTOhUJO//GRDIy5omJKs+z7k3KmAGwZqhw==",
+    "Microsoft.Dynamics.Commerce.Resources.Strings/10.12.23229.1": {
+      "sha512": "eyclzdEGSIIPNu7ASWV8DoOGVfVOqXQnoGEgfse1MhvU4l2WXfyznUkB9T+2L53j0fXFm9mx+jnj6NE2NziEWw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.resources.strings/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.resources.strings/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Retail.Resources.Strings.xml",
-        "microsoft.dynamics.commerce.resources.strings.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.resources.strings.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.resources.strings.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Data/9.48.23326.1-preview": {
-      "sha512": "PIYUKyMGJDuQ/yp4z11WbtJTGSCtGpgi7jI/WJMcSvE1MkXkrwCupD/5K7aEzjCDP3wu1RFEHKQBllURb4l4Gg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Data/9.45.23313.4": {
+      "sha512": "b/ZMb0pF2DYkEj5v3D2bwiztOIl480lHCeRs+VX/6oQpmlxZIeL4ZU5yeuOVJnuK5zZSXE9z6We9MROFn9GmXg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.data/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.data/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Data.xml",
-        "microsoft.dynamics.commerce.runtime.data.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.data.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.data.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.48.23326.1-preview": {
-      "sha512": "KIaaUHX0cFVhBhW7K8hgYMnAi12r1mifezs60axeA2B5xjAV9sWj3Mzz5v6MwZeeQD++OhJ72+IgSktf/shsLA==",
+    "Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer/9.45.23313.4": {
+      "sha512": "7+lwy/E2lJBLzffdM5+nlnm7JEhmbPVnFM1rjDn9YSHtobSPlY8oeiHRMCPswu0kdiW33IDxsfXTbJyfBDho2w==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer.xml",
-        "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.dataaccess.sqlserver.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.48.23326.1-preview": {
-      "sha512": "aX1GRmWM2JYeTMpQIEcAbUh4H9r7sDZMUKc5zvrUiVgxT7kn58frTwcnkPEpvCjl5jLywXlzIaHn1Yb0ZaE1dA==",
+    "Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages/9.45.23313.4": {
+      "sha512": "LakSwNP17qR8/ceX0GZmgfkQq5eXFLg7ZMYg86HYsaKdCKUzfjwDJDihCdG2KjeQJZCy4NeT9uZmVS7W11bZgw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.dataservices.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.dataservices.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.dataservices.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.dataservices.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.dataservices.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Entities/9.48.23326.1-preview": {
-      "sha512": "mAdWqe+lc+Vw+Gous3JnYxxzEUlAkLJ3kRAnR/4QB14qglPahlKaDB+2S81jyk0/+W2lp0bgMt/ACWtIPfOVEA==",
+    "Microsoft.Dynamics.Commerce.Runtime.Entities/9.45.23313.4": {
+      "sha512": "1UA+SEaCvnulRmmoE15ynOTlRhvNjHH3a5IthAzmJMGReqNPHucxuiRDsH1K6QajWJqs53egJTwBGElehpSXrQ==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.entities/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.entities/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Entities.xml",
-        "microsoft.dynamics.commerce.runtime.entities.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.entities.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.entities.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Framework/10.14.23248.1-preview": {
-      "sha512": "PKKLTlvXpOGJ8DMDgH5Cy/uawxJnEW40rWZtSkVTVkQlilLwSqc8rGLKg5VCjdl7Rq5yJaQWe4cci2VD66cZ7g==",
+    "Microsoft.Dynamics.Commerce.Runtime.Framework/10.12.23229.1": {
+      "sha512": "VR1uDsgwrpn8wxDPPtMQGjysUxthn/awBW1OuC82gJudN84chz1B07uxXkHapQP3En2iItx96/MSdSPPw063Rg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.framework/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.framework/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Framework.xml",
-        "microsoft.dynamics.commerce.runtime.framework.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.framework.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.framework.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.14.23248.1-preview": {
-      "sha512": "xI3/iw5CN7CLX/0QR17ouCk/DMQVlz37eBC7O8BM2xRn9UvOm64WRZFJ9qAd69K/1Zu7nN3f1K3l2TKH76PIVQ==",
+    "Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts/10.12.23229.1": {
+      "sha512": "Hi7e4AOWSmAT9ftOoYZNmk4cZa6KIn0NeQHcElE8ZdoEbQo76Evj8YXMl4E1e1XtrstG6n4JbkczRPuQvod0lQ==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.hosting.contracts/10.14.23248.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.hosting.contracts/10.12.23229.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts.xml",
-        "microsoft.dynamics.commerce.runtime.hosting.contracts.10.14.23248.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.hosting.contracts.10.12.23229.1.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.hosting.contracts.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Messages/9.48.23326.1-preview": {
-      "sha512": "wjqEIl7akA41NrkK01QD5FY0d1vtHmTdpk6xADNx4mlBK4h0DYK98C6FSyW5iR/ethyu862XmpjtCsEHLhMuNg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Messages/9.45.23313.4": {
+      "sha512": "opHeGb7UHjlJmep+B3Bp89gxMDUgB/Zv0AoDzLBibJBUzszjdRb2NZnniXa/JrAe3X1IMyhzsioQMi1nxF9u/w==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.48.23326.1-preview": {
-      "sha512": "YF0Ys7UvDllQlXXD/CYe7sE0oL2d3+1AHmCdxdzpLqNRzd+E2o9MtSyBCogfjRNwh3il/zkCnCl2znqCc4kWhg==",
+    "Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages/9.45.23313.4": {
+      "sha512": "8w8dfTafFyzXv0/RudjM3efi4g+fihlBlyGW6oht4L/cGwfJhOtC5JGaVr3qdxV1KJAQ2Nr4mWV+y3dkwYJpyg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.realtimeservices.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.realtimeservices.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.realtimeservices.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.realtimeservices.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.realtimeservices.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.48.23326.1-preview": {
-      "sha512": "9B+sMPzzTwYH43R16gDOxPfM9rw9vIuInPO5cbce98wSs4e+LzopuajRxFKf9i2MfF2WnkXNOSDYnQOYAKIvyg==",
+    "Microsoft.Dynamics.Commerce.Runtime.Services.Messages/9.45.23313.4": {
+      "sha512": "6yzKPAdD/OCTnf6rV5QI8SsOujs230T8GdO/Mant3HLZCHPYpj8Pk+vl09Yi7a6qTPihPK65fg5WVUrngpxY6A==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.runtime.services.messages/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.runtime.services.messages/9.45.23313.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.dll",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.pdb",
         "lib/netstandard2.0/Microsoft.Dynamics.Commerce.Runtime.Services.Messages.xml",
-        "microsoft.dynamics.commerce.runtime.services.messages.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.runtime.services.messages.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.runtime.services.messages.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.48.23326.5-preview": {
-      "sha512": "eRXiz1XqdfET13zy1H5FAgP0OfvyVbPelIiOs2l5ZBdE92OXzU1TtVBtLHk23TtRk72RYThPQ8U4PjLDdX1s3Q==",
+    "Microsoft.Dynamics.Commerce.Sdk.Runtime/9.45.23355.2": {
+      "sha512": "Y/dG4PLRwOV4FABtFs5ZgocPyIuCAMdC1DbVeE1Ub59B6j0i9r3dv2Q8UXWxJXuGC1YcyiqKLqL1oHJE3xIUFw==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.sdk.runtime/9.48.23326.5-preview",
+      "path": "microsoft.dynamics.commerce.sdk.runtime/9.45.23355.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.txt",
@@ -2843,19 +2662,19 @@
         "build/Microsoft.Dynamics.Commerce.Sdk.Runtime.props",
         "build/Microsoft.Dynamics.Commerce.Sdk.Runtime.targets",
         "build/Microsoft.Dynamics.Commerce.Sdk.StoreCommerce.MSBuildTasks.dll",
-        "microsoft.dynamics.commerce.sdk.runtime.9.48.23326.5-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.sdk.runtime.9.45.23355.2.nupkg.sha512",
         "microsoft.dynamics.commerce.sdk.runtime.nuspec"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator/10.32.23313.2-preview": {
-      "sha512": "IKe36EypeOcY1Cwa9tobPM3GSEFARG4lWg0doKcCJL/0iLePZoupvZgpm42ddHsK7S6U5F5ysHhLMCQa8dfkxw==",
+    "Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator/10.32.23313.2": {
+      "sha512": "Dt0xJCOLgdPMicvu6wpbt6clPjuEh99H09zKEk91muIj9Wgu4u/mtxd8d04KjjZyKMjxhHzgTTd1gyWouVrFAg==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.tools.coreproxygenerator/10.32.23313.2-preview",
+      "path": "microsoft.dynamics.commerce.tools.coreproxygenerator/10.32.23313.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         "build/Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.props",
-        "microsoft.dynamics.commerce.tools.coreproxygenerator.10.32.23313.2-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.tools.coreproxygenerator.10.32.23313.2.nupkg.sha512",
         "microsoft.dynamics.commerce.tools.coreproxygenerator.nuspec",
         "tools/CommerceProxyGenerator.dll",
         "tools/CommerceProxyGenerator.dll.config",
@@ -2883,15 +2702,15 @@
         "tools/System.Windows.Extensions.dll"
       ]
     },
-    "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore/9.48.23326.1-preview": {
-      "sha512": "H1yQKO1vpcARsncjWShwsvaCZN9CN0KuyDaNK1VxEM2hf5IsKH4pugmouLgzkIBPdU6Xz/3xEGgwtH8ldR2S0Q==",
+    "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore/9.45.23313.4": {
+      "sha512": "19rLoV0Fh80L5ys/jQLXxZrIUcym1XkDtgDHdZyLTqSxMnibJy2NNQUfEEFstBEN7lrCPlQY+i72ijelQufh1Q==",
       "type": "package",
-      "path": "microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore/9.48.23326.1-preview",
+      "path": "microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore/9.45.23313.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         "build/Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore.targets",
-        "microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore.9.48.23326.1-preview.nupkg.sha512",
+        "microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore.9.45.23313.4.nupkg.sha512",
         "microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore.nuspec",
         "tools/Microsoft.AspNetCore.OData.dll",
         "tools/Microsoft.Dynamics.Commerce.Runtime.Entities.dll",
@@ -2996,55 +2815,6 @@
         "lib/netstandard1.0/Microsoft.Extensions.Primitives.xml",
         "microsoft.extensions.primitives.1.1.1.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client/4.30.1": {
-      "sha512": "xk8tJeGfB2yD3+d7a0DXyV7/HYyEG10IofUHYHoPYKmDbroi/j9t1BqSHgbq1nARDjg7m8Ki6e21AyNU7e/R4Q==",
-      "type": "package",
-      "path": "microsoft.identity.client/4.30.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
-        "lib/monoandroid90/Microsoft.Identity.Client.dll",
-        "lib/monoandroid90/Microsoft.Identity.Client.xml",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
-        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.dll",
-        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
-        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.3/Microsoft.Identity.Client.xml",
-        "lib/uap10.0/Microsoft.Identity.Client.dll",
-        "lib/uap10.0/Microsoft.Identity.Client.pri",
-        "lib/uap10.0/Microsoft.Identity.Client.xml",
-        "lib/xamarinios10/Microsoft.Identity.Client.dll",
-        "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "lib/xamarinmac20/Microsoft.Identity.Client.dll",
-        "lib/xamarinmac20/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.30.1.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
-      "sha512": "HpG4oLwhQsy0ce7OWq9iDdLtJKOvKRStIKoSEOeBMKuohfuOWNDyhg8fMAJkpG/kFeoe4J329fiMHcJmmB+FPw==",
-      "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/2.18.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512",
-        "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
@@ -3659,35 +3429,19 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.5.1": {
-      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+    "System.Buffers/4.3.0": {
+      "sha512": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
       "type": "package",
-      "path": "system.buffers/4.5.1",
+      "path": "system.buffers/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Buffers.dll",
-        "lib/net461/System.Buffers.xml",
-        "lib/netcoreapp2.0/_._",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.1/.xml",
         "lib/netstandard1.1/System.Buffers.dll",
-        "lib/netstandard1.1/System.Buffers.xml",
-        "lib/netstandard2.0/System.Buffers.dll",
-        "lib/netstandard2.0/System.Buffers.xml",
-        "lib/uap10.0.16299/_._",
-        "ref/net45/System.Buffers.dll",
-        "ref/net45/System.Buffers.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.Buffers.dll",
-        "ref/netstandard1.1/System.Buffers.xml",
-        "ref/netstandard2.0/System.Buffers.dll",
-        "ref/netstandard2.0/System.Buffers.xml",
-        "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.1.nupkg.sha512",
-        "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.buffers.4.3.0.nupkg.sha512",
+        "system.buffers.nuspec"
       ]
     },
     "System.CodeDom/4.7.0": {
@@ -5161,47 +4915,6 @@
         "system.linq.parallel.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "type": "package",
-      "path": "system.memory/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Memory.Data/1.0.2": {
-      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
-      "type": "package",
-      "path": "system.memory.data/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "DotNetPackageIcon.png",
-        "README.md",
-        "lib/net461/System.Memory.Data.dll",
-        "lib/net461/System.Memory.Data.xml",
-        "lib/netstandard2.0/System.Memory.Data.dll",
-        "lib/netstandard2.0/System.Memory.Data.xml",
-        "system.memory.data.1.0.2.nupkg.sha512",
-        "system.memory.data.nuspec"
-      ]
-    },
     "System.Net.Http/4.3.4": {
       "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
       "type": "package",
@@ -5359,53 +5072,6 @@
         "ref/xamarinwatchos10/_._",
         "system.net.sockets.4.3.0.nupkg.sha512",
         "system.net.sockets.nuspec"
-      ]
-    },
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Numerics.Vectors.dll",
-        "lib/net46/System.Numerics.Vectors.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.Numerics.Vectors.dll",
-        "lib/netstandard1.0/System.Numerics.Vectors.xml",
-        "lib/netstandard2.0/System.Numerics.Vectors.dll",
-        "lib/netstandard2.0/System.Numerics.Vectors.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
-        "ref/net46/System.Numerics.Vectors.dll",
-        "ref/net46/System.Numerics.Vectors.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/System.Numerics.Vectors.dll",
-        "ref/netstandard1.0/System.Numerics.Vectors.xml",
-        "ref/netstandard2.0/System.Numerics.Vectors.dll",
-        "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
-        "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.ObjectModel/4.3.0": {
@@ -6119,29 +5785,19 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+    "System.Runtime.CompilerServices.Unsafe/4.3.0": {
+      "sha512": "rcnXA1U9W3QUtMSGoyoNHH6w4V5Rxa/EKXmzpORUYlDAlDB34hIQoU57ATXl8xHa83VvzRm6PcElEizgUd7U5w==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "path": "system.runtime.compilerservices.unsafe/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt"
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.3.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec"
       ]
     },
     "System.Runtime.Extensions/4.3.0": {
@@ -7416,31 +7072,30 @@
         "system.text.encoding.extensions.nuspec"
       ]
     },
-    "System.Text.Encodings.Web/6.0.0": {
-      "sha512": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+    "System.Text.Encodings.Web/5.0.1": {
+      "sha512": "KmJ+CJXizDofbq6mpqDoRRLcxgOd2z9X3XoFNULSbvbqVRZkFX3istvr+MUjL6Zw1RT+RNdoI4GYidIINtgvqQ==",
       "type": "package",
-      "path": "system.text.encodings.web/6.0.0",
+      "path": "system.text.encodings.web/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Text.Encodings.Web.dll",
         "lib/net461/System.Text.Encodings.Web.xml",
-        "lib/net6.0/System.Text.Encodings.Web.dll",
-        "lib/net6.0/System.Text.Encodings.Web.xml",
-        "lib/netcoreapp3.1/System.Text.Encodings.Web.dll",
-        "lib/netcoreapp3.1/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
         "lib/netstandard2.0/System.Text.Encodings.Web.dll",
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.6.0.0.nupkg.sha512",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.5.0.1.nupkg.sha512",
         "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Text.Json/4.7.1": {
@@ -7688,39 +7343,21 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+    "System.Threading.Tasks.Extensions/4.3.0": {
+      "sha512": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.2",
+      "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/netcoreapp2.1/_._",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec"
       ]
     },
     "System.Threading.Timer/4.3.0": {
@@ -8053,7 +7690,7 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "CommerceRuntime/9.48.0": {
+    "CommerceRuntime/9.45.0": {
       "type": "project",
       "path": "../../CommerceRuntime/CommerceRuntime.csproj",
       "msbuildProject": "../../CommerceRuntime/CommerceRuntime.csproj"
@@ -8061,9 +7698,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CommerceRuntime >= 9.48.0",
-      "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit >= 9.48.*-* < 9.49.0",
-      "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore >= 9.48.*-* < 9.49.0"
+      "CommerceRuntime >= 9.45.0",
+      "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit >= 9.45.* < 9.46.0",
+      "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore >= 9.45.* < 9.46.0"
     ]
   },
   "packageFolders": {
@@ -8072,7 +7709,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "9.48.0",
+    "version": "9.45.0",
     "restore": {
       "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\CommerceProxyGenerator\\CSharp\\CSharpProxyGenerator.csproj",
       "projectName": "SRF.Commerce.RetailProxy.Extension",
@@ -8121,11 +7758,11 @@
         "dependencies": {
           "Microsoft.Dynamics.Commerce.Proxy.ScaleUnit": {
             "target": "Package",
-            "version": "[9.48.*-*, 9.49.0)"
+            "version": "[9.45.*, 9.46.0)"
           },
           "Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore": {
             "target": "Package",
-            "version": "[9.48.*-*, 9.49.0)"
+            "version": "[9.45.*, 9.46.0)"
           }
         },
         "imports": [

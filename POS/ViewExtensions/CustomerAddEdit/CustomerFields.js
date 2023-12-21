@@ -1,4 +1,4 @@
-System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensions", "PosApi/Entities", "knockout"], function (exports_1, context_1) {
+System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensions", "PosApi/Entities", "./LATCODocumentTypeViewModel", "knockout"], function (exports_1, context_1) {
     "use strict";
     var __extends = (this && this.__extends) || (function () {
         var extendStatics = function (d, b) {
@@ -13,7 +13,7 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
             d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
     })();
-    var CustomerAddEditView_1, TypeExtensions_1, Entities_1, knockout_1, CustomerFields;
+    var CustomerAddEditView_1, TypeExtensions_1, Entities_1, LATCODocumentTypeViewModel_1, knockout_1, CustomerFields;
     var __moduleName = context_1 && context_1.id;
     return {
         setters: [
@@ -26,6 +26,9 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
             function (Entities_1_1) {
                 Entities_1 = Entities_1_1;
             },
+            function (LATCODocumentTypeViewModel_1_1) {
+                LATCODocumentTypeViewModel_1 = LATCODocumentTypeViewModel_1_1;
+            },
             function (knockout_1_1) {
                 knockout_1 = knockout_1_1;
             }
@@ -36,6 +39,7 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
                 function CustomerFields(id, context) {
                     var _this = _super.call(this, id, context) || this;
                     _this.LATCODocumentTypeList = [];
+                    _this.latcoDocumentTypeViewModel = new LATCODocumentTypeViewModel_1.default(context);
                     _this.accountNumber = knockout_1.default.observable("");
                     _this.customerIsPerson = knockout_1.default.observable(true);
                     var IDENTIFICATIONNUMBER_key = "IDENTIFICATIONNUMBER";
@@ -51,10 +55,6 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
                     _this.IDENTIFICATIONNUMBER.subscribe(function (newValue) {
                         _this._addOrUpdateExtensionProperty(IDENTIFICATIONNUMBER_key, { StringValue: newValue });
                     });
-                    _this.LATCODocumentTypeList = knockout_1.default.observable([
-                        { DocumentId: 'CC', Description: 'Cedula de ciudadania colombiana 1' },
-                        { DocumentId: 'NIT', Description: 'Numero de identificacion tributaria' }
-                    ]);
                     _this.LATCODocumentType = knockout_1.default.observable("");
                     _this.LATCODocumentType.subscribe(function (newValue) {
                         _this._addOrUpdateExtensionProperty(LATCODocumentType_key, { StringValue: newValue });
@@ -74,6 +74,22 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
                     _this.LATCOObligationCode = knockout_1.default.observable("");
                     _this.LATCOObligationCode.subscribe(function (newValue) {
                         _this._addOrUpdateExtensionProperty(LATCOObligationCode_key, { StringValue: newValue });
+                    });
+                    if (_this.customerIsPerson() === true) {
+                        _this.LATCODocumentType = knockout_1.default.observable("CC");
+                    }
+                    else {
+                        _this.LATCODocumentType = knockout_1.default.observable("NIT");
+                    }
+                    _this.latcoDocumentTypeViewModel.load()
+                        .then(function () {
+                        for (var i = 0; i < _this.latcoDocumentTypeViewModel.loadedData.length; i++) {
+                            _this.LATCODocumentTypeList.push({ DocumentId: _this.latcoDocumentTypeViewModel.loadedData[i].DocumentId, Description: _this.latcoDocumentTypeViewModel.loadedData[i].Description });
+                        }
+                    })
+                        .catch(function (reason) {
+                        alert("Error en constructor CustomerFields: this.latcoDocumentTypeViewModel.load(): " + JSON.stringify(reason));
+                        _this.context.logger.logError("An error occurred while loading the LATCOBasicDocumentTypeViewModel: " + JSON.stringify(reason));
                     });
                     _this.context.logger.logInformational("Samples_CustomerFields constructed", _this.context.logger.getNewCorrelationId());
                     return _this;
@@ -137,18 +153,6 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
                             LATCOObligationCodeExtensionValue = LATCOObligationCodeExtensionProperty.Value;
                             this.LATCOObligationCode(LATCOObligationCodeExtensionValue.StringValue);
                         }
-                        try {
-                            this.context.runtime.executeAsync(new Commerce.GetCustomerClientRequest("004222"))
-                                .then(function (result) {
-                                alert(result.data.result.FirstName);
-                            })
-                                .catch(function (error1) {
-                                alert(error1.toString());
-                            });
-                        }
-                        catch (error) {
-                            alert(error.toString());
-                        }
                     }
                 };
                 CustomerFields.prototype._addOrUpdateExtensionProperty = function (key, newValue) {
@@ -183,4 +187,4 @@ System.register(["PosApi/Extend/Views/CustomerAddEditView", "PosApi/TypeExtensio
         }
     };
 });
-//# sourceMappingURL=C:/DevPOS/LATCOPOS_STORECOMMERCE/POS/CustomerFields.js.map
+//# sourceMappingURL=C:/DevPOS/LATCOPOS_STORECOMMERCE/POS/ViewExtensions/CustomerAddEdit/CustomerFields.js.map

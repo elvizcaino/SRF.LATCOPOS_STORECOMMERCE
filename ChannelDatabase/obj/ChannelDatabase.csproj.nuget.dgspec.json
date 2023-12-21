@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj": {
-      "version": "9.48.0",
+      "version": "9.45.0",
       "restore": {
         "projectUniqueName": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj",
         "projectName": "ChannelDatabase",
@@ -50,7 +50,7 @@
           "dependencies": {
             "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": {
               "target": "Package",
-              "version": "[9.48.*-*, 9.49.0)"
+              "version": "[9.45.*, 9.46.0)"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

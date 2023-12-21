@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DFSSphdR9TqkFuhgzMWv3tm1DClbB5jyo97mQ1neZsDsUZKsOjzh5ADRFoFNbcUlOrL+icTz4OcJG0SyaOT9uw==",
+  "dgSpecHash": "5zp2af2foYsSI4Do8+hzHJAxig0ysiY7RMIxr9OqrI6okhsv+ufrL1r1OEOvdtPO6O9o8Aub5LuCvEQ+vgHjqQ==",
   "success": true,
   "projectFilePath": "C:\\DevPOS\\LATCOPOS_STORECOMMERCE\\ChannelDatabase\\ChannelDatabase.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin84bb96b0b3\\.nuget\\packages\\microsoft.dynamics.commerce.sdk.channeldatabase\\9.48.23326.5-preview\\microsoft.dynamics.commerce.sdk.channeldatabase.9.48.23326.5-preview.nupkg.sha512",
+    "C:\\Users\\Admin84bb96b0b3\\.nuget\\packages\\microsoft.dynamics.commerce.sdk.channeldatabase\\9.45.23355.2\\microsoft.dynamics.commerce.sdk.channeldatabase.9.45.23355.2.nupkg.sha512",
     "C:\\Users\\Admin84bb96b0b3\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin84bb96b0b3\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],

@@ -4,9 +4,9 @@ using System.Runtime.Serialization;
 namespace SRF.CommerceRuntime.Messages.CustTableExtension
 {
     [DataContract]
-    public class UpdateCustTableExtensionEntityDataResponse : Response
+    public class UpdateCustTableExtensionDataResponse : Response
     {
-        public UpdateCustTableExtensionEntityDataResponse(bool success)
+        public UpdateCustTableExtensionDataResponse(bool success)
         {
             Success = success;
         }

@@ -14,7 +14,7 @@ declare namespace Commerce {
         static isString(variable: any): variable is string;
         static isBoolean(variable: any): variable is boolean;
         static isPrimitive(variable: any): boolean;
-        static clone<T>(origObject: T, removeUnsafeProperties?: boolean): T;
+        static clone<T>(origObject: T): T;
         static forEachKeyValuePair<TValue>(object: any, iterator: (key: string, value: TValue) => boolean | void): void;
         static groupBy<T>(inputArray: T[], keySelector: (value: T) => any): T[][];
         static tryDispose(disposableObject: IDisposable): boolean;
@@ -475,15 +475,7 @@ declare module Commerce.Proxy.Entities {
         Microsoft_Dynamics_Commerce_Runtime_Inventory_NotValidTransferOrderJournalXmlStr = 30,
         Microsoft_Dynamics_Commerce_Runtime_Inventory_NotSupportedDocumentStateInSearchCriteria = 31,
         Microsoft_Dynamics_Commerce_Runtime_Inventory_NotSupportedSearchCriteriaWhenSearchInventoryDocumentLines = 32,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_SerialNumberLineQuantityExceedsLimit = 33,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_WarehouseNotFound = 34,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_BulkInventoryUpdateCountExceedsLimit = 35,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_UpdateProductWarehouseQuantityForNonDefaultWarehouseNotSupported = 36,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_UpdateProductWarehouseQuantityForMasterProductNotSupported = 37,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_UpdateProductWarehouseQuantityDuplicatedQueryItemNotSupported = 38,
-        Microsoft_Dynamics_Commerce_Runtime_Inventory_UpdateProductWarehouseQuantityForLocationControlledProductNotSupported = 39,
-        Microsoft_Dynamics_Commerce_Runtime_RealtimeAccuracyNotSuppoted = 40,
-        Microsoft_Dynamics_Commerce_Runtime_ProductWarehouseQuantitiesIsEmpty = 41
+        Microsoft_Dynamics_Commerce_Runtime_Inventory_SerialNumberLineQuantityExceedsLimit = 33
     }
     enum InventoryJournalPosAdjustmentType {
         In = 0,
@@ -501,10 +493,7 @@ declare module Commerce.Proxy.Entities {
         Microsoft_Dynamics_Commerce_Runtime_KitComponentNotFound = 8,
         Microsoft_Dynamics_Commerce_Runtime_NotValidProductSearchCriteria = 9,
         Microsoft_Dynamics_Commerce_Runtime_CategoryAttributeTypeNotSupported = 10,
-        Microsoft_Dynamics_Commerce_Runtime_NotValidProductDataXml = 11,
-        Microsoft_Dynamics_Commerce_Runtime_ItemsNotFoundOnTransaction = 12,
-        Microsoft_Dynamics_Commerce_Runtime_DuplicatePriceLookupContextForSameProduct = 13,
-        Microsoft_Dynamics_Commerce_Runtime_SearchFailedForClientError = 14
+        Microsoft_Dynamics_Commerce_Runtime_NotValidProductDataXml = 11
     }
     enum MediaType {
         None = 0,
@@ -515,48 +504,6 @@ declare module Commerce.Proxy.Entities {
     enum CheckoutLocation {
         Default = 0,
         Local = 1
-    }
-    enum CountryRegionISOCode {
-        None = 0,
-        AU = 1,
-        AT = 2,
-        BE = 3,
-        BR = 4,
-        CA = 5,
-        CN = 6,
-        CZ = 7,
-        DK = 8,
-        EE = 9,
-        FI = 10,
-        FR = 11,
-        DE = 12,
-        HU = 13,
-        IS = 14,
-        IN = 15,
-        IE = 16,
-        IL = 17,
-        IT = 18,
-        JP = 19,
-        LV = 20,
-        LT = 21,
-        MY = 22,
-        MX = 23,
-        NL = 24,
-        NZ = 25,
-        NO = 26,
-        PL = 27,
-        RU = 28,
-        SA = 29,
-        SG = 30,
-        ZA = 31,
-        ES = 32,
-        SE = 33,
-        CH = 34,
-        TH = 35,
-        TR = 36,
-        GB = 37,
-        US = 38,
-        PH = 39
     }
     enum AddressOperationType {
         None = 0,
@@ -715,9 +662,7 @@ declare module Commerce.Proxy.Entities {
         Percent = 2,
         InterCompanyPercent = 3,
         External = 4,
-        Proportional = 5,
-        UnitSpecified = 6,
-        UnitSpecifiedMatch = 7
+        Proportional = 5
     }
     enum CashType {
         Coin = 0,
@@ -879,11 +824,6 @@ declare module Commerce.Proxy.Entities {
         House_RU = 21,
         Flat_RU = 22,
         CountryOKSMCode_RU = 23
-    }
-    enum CustomerOrderSynchronizationMode {
-        Synchronous = 0,
-        Asynchronous = 1,
-        RealTimeWithAsyncFallback = 2
     }
     enum StatementMethod {
         Staff = 0,
@@ -1571,8 +1511,7 @@ declare module Commerce.Proxy.Entities {
         DeleteUser = 3,
         EditUser = 4,
         AccountStatement = 5,
-        InvoiceRequest = 6,
-        PromoteBusinessPartner = 7
+        InvoiceRequest = 6
     }
     enum BusinessPartnerOperationStatus {
         None = 0,
@@ -1749,8 +1688,7 @@ declare module Commerce.Proxy.Entities {
     }
     enum InventoryAccuracy {
         Default = 0,
-        Low = 1,
-        Realtime = 2
+        Low = 1
     }
     enum ElectronicAddressType {
         None = 0,
@@ -1761,16 +1699,6 @@ declare module Commerce.Proxy.Entities {
         Additional = 1,
         All = 2,
         None = -1
-    }
-    enum DateValidationType {
-        Advanced = 0,
-        Standard = 1
-    }
-    enum AffiliationFilterType {
-        None = 0,
-        Hidden = 1,
-        NoneHidden = 2,
-        All = 3
     }
     enum DownloadSessionStatus {
         Started = 0,
@@ -1901,9 +1829,7 @@ declare module Commerce.Proxy.Entities {
         Microsoft_Dynamics_Commerce_Runtime_ItemQuantityLessThanMinimum = 4,
         Microsoft_Dynamics_Commerce_Runtime_ItemQuantityViolatesMultiplicityOfConfiguredNumber = 5,
         Microsoft_Dynamics_Commerce_Runtime_ItemQuantityExceedsMaximumAndViolatesMultiplicityOfConfiguredNumber = 6,
-        Microsoft_Dynamics_Commerce_Runtime_ItemQuantityLessThanMinimumAndViolatesMultiplicityOfConfiguredNumber = 7,
-        Microsoft_Dynamics_Commerce_Runtime_AddingItem_QuantityExceedsMaximumAndViolatesMultiplicityOfConfiguredNumber = 8,
-        Microsoft_Dynamics_Commerce_Runtime_UpdatingItem_QuantityExceedsMaximumAndViolatesMultiplicityOfConfiguredNumber = 9
+        Microsoft_Dynamics_Commerce_Runtime_ItemQuantityLessThanMinimumAndViolatesMultiplicityOfConfiguredNumber = 7
     }
     enum CommunicationErrors {
         None = 0,
@@ -2559,8 +2485,7 @@ declare module Commerce.Proxy.Entities {
         Microsoft_Dynamics_Commerce_Runtime_MixAndMatchDiscountWithNoLineGroups = 1,
         Microsoft_Dynamics_Commerce_Runtime_StartDateTimeLaterThanEndDateTime = 2,
         Microsoft_Dynamics_Commerce_Runtime_PricingPropertyHandlerNotFound = 3,
-        Microsoft_Dynamics_Commerce_Runtime_MultiplePricingPropertyHandlerFound = 4,
-        Microsoft_Dynamics_Commerce_Runtime_PriceTradeAgreementRequestPropertyValueCannotBeNull = 5
+        Microsoft_Dynamics_Commerce_Runtime_MultiplePricingPropertyHandlerFound = 4
     }
     enum ProductPricingConfigurationErrorCode {
         None = 0,
@@ -2596,13 +2521,10 @@ declare module Commerce.Proxy.Entities {
         Microsoft_Dynamics_Commerce_Runtime_ProductIsNotGiftCard = 24,
         Microsoft_Dynamics_Commerce_Runtime_InvalidTransactionTypeForRecalledOrder = 25,
         Microsoft_Dynamics_Commerce_Runtime_DuplicatedCartLines = 26,
-        Microsoft_Dynamics_Commerce_Runtime_UnsupportedOrderSearchSortColumn = 27,
-        Microsoft_Dynamics_Commerce_Runtime_InvalidForceCompleteTransactionUsage = 28,
-        Microsoft_Dynamics_Commerce_Runtime_TransactionAlreadyExistsDiffersByType = 29,
-        Microsoft_Dynamics_Commerce_Runtime_AsynchronousOrderCancellationWorkflowAlreadyExists = 30,
-        Microsoft_Dynamics_Commerce_Runtime_InvalidAsynchronousCancellationTargetOrder = 31,
-        Microsoft_Dynamics_Commerce_Runtime_CannotCreateSynchronousCustomerOrderForAsyncCustomer = 32,
-        Microsoft_Dynamics_Commerce_Runtime_RetailOperationForGettingTenderTypeIsNotSupported = 33
+        Microsoft_Dynamics_Commerce_Runtime_InvalidForceCompleteTransactionUsage = 27,
+        Microsoft_Dynamics_Commerce_Runtime_TransactionAlreadyExistsDiffersByType = 28,
+        Microsoft_Dynamics_Commerce_Runtime_AsynchronousOrderCancellationWorkflowAlreadyExists = 29,
+        Microsoft_Dynamics_Commerce_Runtime_InvalidAsynchronousCancellationTargetOrder = 30
     }
     enum PaymentConfigurationErrors {
         None = 0,
@@ -2621,18 +2543,13 @@ declare module Commerce.Proxy.Entities {
         UnitWithVat = 4,
         InvoiceWithVat = 5
     }
-    enum OnlineStoreCustomerType {
-        B2C = 0,
-        B2B = 1
-    }
     enum BusinessPartnerOperationDeliveryType {
         None = 0,
         Email = 1
     }
-    enum ProspectType {
-        None = 0,
-        Buyer = 1,
-        BuyerSeller = 2
+    enum OnlineStoreCustomerType {
+        B2C = 0,
+        B2B = 1
     }
     enum WrongEndpointErrors {
         None = 0,
@@ -2950,7 +2867,6 @@ declare module Commerce.Proxy.Entities {
         ReceiptEmail?: string;
         ReceiptId?: string;
         RequestedDeliveryDate?: Date;
-        ConfirmedShipDate?: Date;
         RequiredDepositAmount?: number;
         RequiredDepositWithoutCarryoutAmount?: number;
         ReturnTransactionHasLoyaltyPayment?: boolean;
@@ -3092,6 +3008,7 @@ declare module Commerce.Proxy.Entities {
         OrgUnitNumber: string;
         RecordId: number;
         InventoryLocationId?: string;
+        OMOperatingUnitNumber?: string;
         TaxGroup?: string;
         FunctionalityProfileId?: string;
         UseCustomerBasedTax?: boolean;
@@ -3108,7 +3025,6 @@ declare module Commerce.Proxy.Entities {
         ShippingWarehouseAddress?: Entities.Address;
         TaxRegistrations?: Entities.TaxRegistration[];
         EventNotificationProfileId?: string;
-        OMOperatingUnitNumber?: string;
         Name?: string;
         DefaultCustomerAccount?: string;
         CategoryHierarchyId?: number;
@@ -3191,7 +3107,6 @@ declare module Commerce.Proxy.Entities {
         DeletedDateTime?: Date;
         ProductListTypeValue?: number;
         DataAreaId?: string;
-        ChannelId?: number;
         ProductListLines?: Entities.ProductListLine[];
         ExtensionProperties?: Entities.CommerceProperty[];
     }
@@ -3306,7 +3221,6 @@ declare module Commerce.Proxy.Entities {
     interface BusinessPartner {
         BusinessPartnerId: string;
         Name?: string;
-        SellerChannelId?: string;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface BusinessPartnerUser {
@@ -3749,7 +3663,6 @@ declare module Commerce.Proxy.Entities {
         IsOverridden?: boolean;
         IsInvoiced?: boolean;
         CalculatedProratedAmount?: number;
-        SpecificUnitSymbol?: string;
         ItemId?: string;
         Quantity?: number;
         Price?: number;
@@ -4161,11 +4074,6 @@ declare module Commerce.Proxy.Entities {
         AADAuthority?: string;
         FrameworkName?: string;
     }
-    interface OrderManagementConfiguration {
-        EnableContactEditPromptForAsyncOrderCancellation?: boolean;
-        SkipSalesInvoiceSelectionDuringReturn?: boolean;
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
     interface DeviceConfiguration {
         UseInMemoryDeviceDataStorage?: boolean;
         AllowItemsAggregation?: boolean;
@@ -4321,7 +4229,6 @@ declare module Commerce.Proxy.Entities {
         CardNotPresentProcessingConfigurationValue?: number;
         EnableQuickPayShortcuts?: boolean;
         ChangeDueBehaviorValue?: number;
-        AutoSynchronizeDeviceNumberSequences?: boolean;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface VisualProfile {
@@ -4616,7 +4523,6 @@ declare module Commerce.Proxy.Entities {
         DeliveryMode?: string;
         Comment?: string;
         RequestedDeliveryDate?: Date;
-        ConfirmedShipDate?: Date;
         PickupTimeslotStartDateTime?: Date;
         PickupTimeslotEndDateTime?: Date;
         InventoryLocationId?: string;
@@ -4959,7 +4865,6 @@ declare module Commerce.Proxy.Entities {
         LastUpdated?: Date;
         DeletedDateTime?: Date;
         DataAreaId?: string;
-        CatalogId?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface CommerceListLine {
@@ -5051,8 +4956,6 @@ declare module Commerce.Proxy.Entities {
         ChannelId?: number;
         StoreNumber?: string;
         InventoryLocationId?: string;
-        ChannelTypeValue?: number;
-        OnlineStoreCustomerTypeValue?: number;
     }
     interface CustomerSearchCriteria {
         Keyword?: string;
@@ -5205,7 +5108,6 @@ declare module Commerce.Proxy.Entities {
         AffiliationTypeValue?: number;
         Description?: string;
         Name?: string;
-        IsHidden?: boolean;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface InventoryInboundOutboundDocumentLinesSummary {
@@ -6069,9 +5971,6 @@ declare module Commerce.Proxy.Entities {
         SearchLocationValue?: number;
         DataLevelValue?: number;
     }
-    interface SalesOrdersLookupCriteria {
-        SalesOrderLookups?: Entities.SalesOrderLookup[];
-    }
     interface CartLineDeliveryPreference {
         LineId?: string;
         DeliveryPreferenceTypeValues?: number[];
@@ -6499,9 +6398,6 @@ declare module Commerce.Proxy.Entities {
         QuantityPicked?: number;
         QuantityPacked?: number;
         QuantityInvoiced?: number;
-        QuantityNotInvoiced?: number;
-        QuantityNotPacked?: number;
-        QuantityNotPicked?: number;
         StoreInventoryTotalQuantity?: number;
         StoreInventoryReservedQuantity?: number;
         StoreInventoryOrderedQuantity?: number;
@@ -6654,7 +6550,6 @@ declare module Commerce.Proxy.Entities {
         CompanySize?: number;
         Comments?: string;
         LastOperationId?: string;
-        ProspectTypeValue?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface ChannelSearchCriteria {
@@ -6854,7 +6749,6 @@ declare module Commerce.Proxy.Entities {
         SalesId?: string;
         ReceiptId?: string;
         OrderStatusValues?: number[];
-        DocumentStatusValues?: number[];
         StartDateTime?: Date;
         EndDateTime?: Date;
         ChannelReferenceId?: string;
@@ -6867,8 +6761,6 @@ declare module Commerce.Proxy.Entities {
         PickupEndDate?: Date;
         PickupTimeslotStartTime?: number;
         PickupTimeslotEndTime?: number;
-        BusinessPartnerId?: string;
-        ChannelIds?: number[];
     }
     interface ChecklistSearchCriteria {
         ChannelId?: number;
@@ -7053,11 +6945,6 @@ declare module Commerce.Proxy.Entities {
         OrgUnitName?: string;
         OrgUnitNumber?: string;
     }
-    interface AffiliationSearchCriteria {
-        FilterTypeValue?: number;
-        AffiliationTypeValue?: number;
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
     interface InvoiceSearchCriteria {
         BusinessPartnerId?: string;
         CustomerId?: string;
@@ -7094,15 +6981,6 @@ declare module Commerce.Proxy.Entities {
         AffiliationTypeValue?: number;
         ReasonCodeLines?: Entities.ReasonCodeLine[];
         CustomerId?: string;
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface PriceLookupContext {
-        HeaderContext?: Entities.PriceLookupHeaderContext;
-        LineContexts?: Entities.PriceLookupLineContext[];
-    }
-    interface ProductPromotion {
-        ProductId?: number;
-        ProductDiscounts?: Entities.Promotion[];
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface ClientBookCustomerSearchCriteria {
@@ -7192,7 +7070,6 @@ declare module Commerce.Proxy.Entities {
         CountryRegions?: Entities.CountryRegion[];
         EventNotificationProfileId?: string;
         RecordId?: number;
-        OMOperatingUnitNumber?: string;
         OrgUnitTypeValue?: number;
         Name?: string;
         DefaultCustomerAccount?: string;
@@ -7445,9 +7322,6 @@ declare module Commerce.Proxy.Entities {
         ValidToDate?: Date;
         ValidationPeriod?: Entities.ValidationPeriod;
         CouponCodes?: string[];
-        DateValidationTypeValue?: number;
-        AreCouponsActiveOnSameDate?: boolean;
-        AreCouponsExpiredOnSameDate?: boolean;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface CategoryPathLookup {
@@ -7473,16 +7347,6 @@ declare module Commerce.Proxy.Entities {
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface CheckInForOrderPickupConfirmation {
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface SalesOrderConfirmedShipDateChange {
-        SalesId?: string;
-        ConfirmedShipDate?: Date;
-        LineChanges?: Entities.SalesLineConfirmedShipDateChange[];
-    }
-    interface OrderCancellationResult {
-        DocumentOperationCommitResultValue?: number;
-        DocumentOperationCommitResultCodeValue?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface VendorSearchCriteria {
@@ -7518,7 +7382,6 @@ declare module Commerce.Proxy.Entities {
         InventoryProductAttributeRecordId?: number;
         InventoryOutOfStockAttributeValueText?: string;
         ProductAvailabilitySortableAttributeRecordId?: number;
-        SkipQuantityInputWhenScanBarcode?: boolean;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface ChannelPurchaseConfiguration {
@@ -7579,17 +7442,6 @@ declare module Commerce.Proxy.Entities {
         AggregatedProductInventoryAvailabilities?: Entities.ProductInventoryAvailability[];
         ExtensionProperties?: Entities.CommerceProperty[];
     }
-    interface ProductWarehouseQuantity {
-        ProductId?: number;
-        InventoryLocationId?: string;
-        PhysicalInventory?: number;
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface UpdateProductWarehouseAvailabilityResult {
-        SuccessfulUpdates?: Entities.InventoryQuantity[];
-        FailedUpdates?: Entities.InventoryQuantity[];
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
     interface InventoryAvailabilitySearchCriteria {
         ProductIds?: number[];
         DefaultWarehouseOnly?: boolean;
@@ -7606,10 +7458,6 @@ declare module Commerce.Proxy.Entities {
     interface PackingSlipData {
         PackingSlipId?: string;
         CreatedDateTime?: Date;
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface CartConfiguration {
-        ValidateDefaultOrderSettingsPerLine?: boolean;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
     interface EmailReceiptSettings {
@@ -7961,18 +7809,6 @@ declare module Commerce.Proxy.Entities {
         QuantityDeclared?: number;
         AmountDeclared?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface SalesOrderLookup {
-        ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface SalesOrderLookupByTransactionId extends SalesOrderLookup {
-        TransactionId?: string;
-        ChannelId?: number;
-        StoreId?: string;
-        TerminalId?: string;
-    }
-    interface SalesOrderLookupBySalesId extends SalesOrderLookup {
-        SalesId?: string;
     }
     interface ButtonGridZone {
         ButtonGridId?: string;
@@ -8332,21 +8168,6 @@ declare module Commerce.Proxy.Entities {
         IsSundayEndTimeAfterMidnight?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
-    interface PriceLookupHeaderContext {
-        CustomerAccountNumber?: string;
-        AffiliationLoyaltyTierLines?: Entities.AffiliationLoyaltyTier[];
-        SalesOrderProperties?: Entities.AttributeValueBase[];
-        ChannelId?: number;
-    }
-    interface PriceLookupLineContext {
-        ProductRecordId?: number;
-        UnitOfMeasureSymbol?: string;
-        InventorySiteId?: string;
-        InventoryLocationId?: string;
-        DeliveryMode?: string;
-        CatalogId?: number;
-        SalesLineProperties?: Entities.AttributeValueBase[];
-    }
     interface ClientBookChange {
         FromStaffId?: string;
         ToStaffId?: string;
@@ -8476,10 +8297,6 @@ declare module Commerce.Proxy.Entities {
         CategoryId?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
     }
-    interface SalesLineConfirmedShipDateChange {
-        LineNumber?: number;
-        ConfirmedShipDate?: Date;
-    }
     interface AttachedService {
         BaseUrl?: string;
         ServiceId?: string;
@@ -8534,22 +8351,6 @@ declare module Commerce.Proxy.Entities {
         MaximumPurchasablePhysicalAvailableQuantity?: number;
         MaximumPurchasableTotalAvailableQuantity?: number;
         ExtensionProperties?: Entities.CommerceProperty[];
-    }
-    interface InventoryQuantity {
-        ProductId: number;
-        ItemId?: string;
-        DataAreaId?: string;
-        ColorId?: string;
-        SizeId?: string;
-        StyleId?: string;
-        ConfigurationId?: string;
-        InventoryLocationId?: string;
-        InventorySiteId?: string;
-        TotalAvailable: number;
-        PhysicalAvailable: number;
-        PhysicalInventory: number;
-        PhysicalReserved: number;
-        OrderedInTotal: number;
     }
     interface ParameterSet {
     }
@@ -8996,7 +8797,6 @@ declare module Commerce.Proxy.Entities {
         ReceiptEmail: string;
         ReceiptId: string;
         RequestedDeliveryDate: Date;
-        ConfirmedShipDate: Date;
         RequiredDepositAmount: number;
         RequiredDepositWithoutCarryoutAmount: number;
         ReturnTransactionHasLoyaltyPayment: boolean;
@@ -9141,6 +8941,7 @@ declare module Commerce.Proxy.Entities {
         OrgUnitNumber: string;
         RecordId: number;
         InventoryLocationId: string;
+        OMOperatingUnitNumber: string;
         TaxGroup: string;
         FunctionalityProfileId: string;
         UseCustomerBasedTax: boolean;
@@ -9157,7 +8958,6 @@ declare module Commerce.Proxy.Entities {
         ShippingWarehouseAddress: Entities.Address;
         TaxRegistrations: Entities.TaxRegistration[];
         EventNotificationProfileId: string;
-        OMOperatingUnitNumber: string;
         Name: string;
         DefaultCustomerAccount: string;
         CategoryHierarchyId: number;
@@ -9244,7 +9044,6 @@ declare module Commerce.Proxy.Entities {
         DeletedDateTime: Date;
         ProductListTypeValue: number;
         DataAreaId: string;
-        ChannelId: number;
         ProductListLines: Entities.ProductListLine[];
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
@@ -9370,7 +9169,6 @@ declare module Commerce.Proxy.Entities {
     class BusinessPartnerClass implements BusinessPartner {
         BusinessPartnerId: string;
         Name: string;
-        SellerChannelId: string;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -9847,7 +9645,6 @@ declare module Commerce.Proxy.Entities {
         IsOverridden: boolean;
         IsInvoiced: boolean;
         CalculatedProratedAmount: number;
-        SpecificUnitSymbol: string;
         ItemId: string;
         Quantity: number;
         Price: number;
@@ -10299,12 +10096,6 @@ declare module Commerce.Proxy.Entities {
         FrameworkName: string;
         constructor(odataObject?: any);
     }
-    class OrderManagementConfigurationClass implements OrderManagementConfiguration {
-        EnableContactEditPromptForAsyncOrderCancellation: boolean;
-        SkipSalesInvoiceSelectionDuringReturn: boolean;
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
     class DeviceConfigurationClass implements DeviceConfiguration {
         UseInMemoryDeviceDataStorage: boolean;
         AllowItemsAggregation: boolean;
@@ -10460,7 +10251,6 @@ declare module Commerce.Proxy.Entities {
         CardNotPresentProcessingConfigurationValue: number;
         EnableQuickPayShortcuts: boolean;
         ChangeDueBehaviorValue: number;
-        AutoSynchronizeDeviceNumberSequences: boolean;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -10771,7 +10561,6 @@ declare module Commerce.Proxy.Entities {
         DeliveryMode: string;
         Comment: string;
         RequestedDeliveryDate: Date;
-        ConfirmedShipDate: Date;
         PickupTimeslotStartDateTime: Date;
         PickupTimeslotEndDateTime: Date;
         InventoryLocationId: string;
@@ -11125,7 +10914,6 @@ declare module Commerce.Proxy.Entities {
         LastUpdated: Date;
         DeletedDateTime: Date;
         DataAreaId: string;
-        CatalogId: number;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -11225,8 +11013,6 @@ declare module Commerce.Proxy.Entities {
         ChannelId: number;
         StoreNumber: string;
         InventoryLocationId: string;
-        ChannelTypeValue: number;
-        OnlineStoreCustomerTypeValue: number;
         constructor(odataObject?: any);
     }
     class CustomerSearchCriteriaClass implements CustomerSearchCriteria {
@@ -11388,7 +11174,6 @@ declare module Commerce.Proxy.Entities {
         AffiliationTypeValue: number;
         Description: string;
         Name: string;
-        IsHidden: boolean;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -12342,10 +12127,6 @@ declare module Commerce.Proxy.Entities {
         DataLevelValue: number;
         constructor(odataObject?: any);
     }
-    class SalesOrdersLookupCriteriaClass implements SalesOrdersLookupCriteria {
-        SalesOrderLookups: Entities.SalesOrderLookup[];
-        constructor(odataObject?: any);
-    }
     class CartLineDeliveryPreferenceClass implements CartLineDeliveryPreference {
         LineId: string;
         DeliveryPreferenceTypeValues: number[];
@@ -12815,9 +12596,6 @@ declare module Commerce.Proxy.Entities {
         QuantityPicked: number;
         QuantityPacked: number;
         QuantityInvoiced: number;
-        QuantityNotInvoiced: number;
-        QuantityNotPacked: number;
-        QuantityNotPicked: number;
         StoreInventoryTotalQuantity: number;
         StoreInventoryReservedQuantity: number;
         StoreInventoryOrderedQuantity: number;
@@ -12987,7 +12765,6 @@ declare module Commerce.Proxy.Entities {
         CompanySize: number;
         Comments: string;
         LastOperationId: string;
-        ProspectTypeValue: number;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -13211,7 +12988,6 @@ declare module Commerce.Proxy.Entities {
         SalesId: string;
         ReceiptId: string;
         OrderStatusValues: number[];
-        DocumentStatusValues: number[];
         StartDateTime: Date;
         EndDateTime: Date;
         ChannelReferenceId: string;
@@ -13224,8 +13000,6 @@ declare module Commerce.Proxy.Entities {
         PickupEndDate: Date;
         PickupTimeslotStartTime: number;
         PickupTimeslotEndTime: number;
-        BusinessPartnerId: string;
-        ChannelIds: number[];
         constructor(odataObject?: any);
     }
     class ChecklistSearchCriteriaClass implements ChecklistSearchCriteria {
@@ -13439,12 +13213,6 @@ declare module Commerce.Proxy.Entities {
         OrgUnitNumber: string;
         constructor(odataObject?: any);
     }
-    class AffiliationSearchCriteriaClass implements AffiliationSearchCriteria {
-        FilterTypeValue: number;
-        AffiliationTypeValue: number;
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
     class InvoiceSearchCriteriaClass implements InvoiceSearchCriteria {
         BusinessPartnerId: string;
         CustomerId: string;
@@ -13487,17 +13255,6 @@ declare module Commerce.Proxy.Entities {
         AffiliationTypeValue: number;
         ReasonCodeLines: Entities.ReasonCodeLine[];
         CustomerId: string;
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class PriceLookupContextClass implements PriceLookupContext {
-        HeaderContext: Entities.PriceLookupHeaderContext;
-        LineContexts: Entities.PriceLookupLineContext[];
-        constructor(odataObject?: any);
-    }
-    class ProductPromotionClass implements ProductPromotion {
-        ProductId: number;
-        ProductDiscounts: Entities.Promotion[];
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -13600,7 +13357,6 @@ declare module Commerce.Proxy.Entities {
         CountryRegions: Entities.CountryRegion[];
         EventNotificationProfileId: string;
         RecordId: number;
-        OMOperatingUnitNumber: string;
         OrgUnitTypeValue: number;
         Name: string;
         DefaultCustomerAccount: string;
@@ -13885,9 +13641,6 @@ declare module Commerce.Proxy.Entities {
         ValidToDate: Date;
         ValidationPeriod: Entities.ValidationPeriod;
         CouponCodes: string[];
-        DateValidationTypeValue: number;
-        AreCouponsActiveOnSameDate: boolean;
-        AreCouponsExpiredOnSameDate: boolean;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -13918,18 +13671,6 @@ declare module Commerce.Proxy.Entities {
         constructor(odataObject?: any);
     }
     class CheckInForOrderPickupConfirmationClass implements CheckInForOrderPickupConfirmation {
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class SalesOrderConfirmedShipDateChangeClass implements SalesOrderConfirmedShipDateChange {
-        SalesId: string;
-        ConfirmedShipDate: Date;
-        LineChanges: Entities.SalesLineConfirmedShipDateChange[];
-        constructor(odataObject?: any);
-    }
-    class OrderCancellationResultClass implements OrderCancellationResult {
-        DocumentOperationCommitResultValue: number;
-        DocumentOperationCommitResultCodeValue: number;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -13970,7 +13711,6 @@ declare module Commerce.Proxy.Entities {
         InventoryProductAttributeRecordId: number;
         InventoryOutOfStockAttributeValueText: string;
         ProductAvailabilitySortableAttributeRecordId: number;
-        SkipQuantityInputWhenScanBarcode: boolean;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -14042,19 +13782,6 @@ declare module Commerce.Proxy.Entities {
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
-    class ProductWarehouseQuantityClass implements ProductWarehouseQuantity {
-        ProductId: number;
-        InventoryLocationId: string;
-        PhysicalInventory: number;
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class UpdateProductWarehouseAvailabilityResultClass implements UpdateProductWarehouseAvailabilityResult {
-        SuccessfulUpdates: Entities.InventoryQuantity[];
-        FailedUpdates: Entities.InventoryQuantity[];
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
     class InventoryAvailabilitySearchCriteriaClass implements InventoryAvailabilitySearchCriteria {
         ProductIds: number[];
         DefaultWarehouseOnly: boolean;
@@ -14073,11 +13800,6 @@ declare module Commerce.Proxy.Entities {
     class PackingSlipDataClass implements PackingSlipData {
         PackingSlipId: string;
         CreatedDateTime: Date;
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class CartConfigurationClass implements CartConfiguration {
-        ValidateDefaultOrderSettingsPerLine: boolean;
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
@@ -14480,21 +14202,6 @@ declare module Commerce.Proxy.Entities {
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
-    class SalesOrderLookupClass implements SalesOrderLookup {
-        ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class SalesOrderLookupByTransactionIdClass extends SalesOrderLookupClass implements SalesOrderLookupByTransactionId {
-        TransactionId: string;
-        ChannelId: number;
-        StoreId: string;
-        TerminalId: string;
-        constructor(odataObject?: any);
-    }
-    class SalesOrderLookupBySalesIdClass extends SalesOrderLookupClass implements SalesOrderLookupBySalesId {
-        SalesId: string;
-        constructor(odataObject?: any);
-    }
     class ButtonGridZoneClass implements ButtonGridZone {
         ButtonGridId: string;
         ZoneId: string;
@@ -14894,23 +14601,6 @@ declare module Commerce.Proxy.Entities {
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
-    class PriceLookupHeaderContextClass implements PriceLookupHeaderContext {
-        CustomerAccountNumber: string;
-        AffiliationLoyaltyTierLines: Entities.AffiliationLoyaltyTier[];
-        SalesOrderProperties: Entities.AttributeValueBase[];
-        ChannelId: number;
-        constructor(odataObject?: any);
-    }
-    class PriceLookupLineContextClass implements PriceLookupLineContext {
-        ProductRecordId: number;
-        UnitOfMeasureSymbol: string;
-        InventorySiteId: string;
-        InventoryLocationId: string;
-        DeliveryMode: string;
-        CatalogId: number;
-        SalesLineProperties: Entities.AttributeValueBase[];
-        constructor(odataObject?: any);
-    }
     class ClientBookChangeClass implements ClientBookChange {
         FromStaffId: string;
         ToStaffId: string;
@@ -15059,11 +14749,6 @@ declare module Commerce.Proxy.Entities {
         ExtensionProperties: Entities.CommerceProperty[];
         constructor(odataObject?: any);
     }
-    class SalesLineConfirmedShipDateChangeClass implements SalesLineConfirmedShipDateChange {
-        LineNumber: number;
-        ConfirmedShipDate: Date;
-        constructor(odataObject?: any);
-    }
     class AttachedServiceClass implements AttachedService {
         BaseUrl: string;
         ServiceId: string;
@@ -15123,23 +14808,6 @@ declare module Commerce.Proxy.Entities {
         MaximumPurchasablePhysicalAvailableQuantity: number;
         MaximumPurchasableTotalAvailableQuantity: number;
         ExtensionProperties: Entities.CommerceProperty[];
-        constructor(odataObject?: any);
-    }
-    class InventoryQuantityClass implements InventoryQuantity {
-        ProductId: number;
-        ItemId: string;
-        DataAreaId: string;
-        ColorId: string;
-        SizeId: string;
-        StyleId: string;
-        ConfigurationId: string;
-        InventoryLocationId: string;
-        InventorySiteId: string;
-        TotalAvailable: number;
-        PhysicalAvailable: number;
-        PhysicalInventory: number;
-        PhysicalReserved: number;
-        OrderedInTotal: number;
         constructor(odataObject?: any);
     }
     class ParameterSetClass implements ParameterSet {
@@ -16867,8 +16535,7 @@ declare namespace Commerce.CashManagement {
 declare namespace Commerce.CashManagement {
     class CreateFloatEntryTransactionClientRequest<TResponse extends CreateFloatEntryTransactionClientResponse> extends CreateCashManagementTransactionClientRequestBase<TResponse> {
         fromShift?: Proxy.Entities.Shift;
-        readonly transactionCurrency: string;
-        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, fromShift?: Proxy.Entities.Shift, transactionCurrency?: string);
+        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, fromShift?: Proxy.Entities.Shift);
     }
 }
 declare namespace Commerce.CashManagement {
@@ -16878,8 +16545,7 @@ declare namespace Commerce.CashManagement {
 declare namespace Commerce.CashManagement {
     class CreateStartingAmountTransactionClientRequest<TResponse extends CreateStartingAmountTransactionClientResponse> extends CreateCashManagementTransactionClientRequestBase<TResponse> {
         fromStoreSafe?: Proxy.Entities.StoreSafe;
-        readonly transactionCurrency: string;
-        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, fromStoreSafe?: Proxy.Entities.StoreSafe, transactionCurrency?: string);
+        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, fromStoreSafe?: Proxy.Entities.StoreSafe);
     }
 }
 declare namespace Commerce.CashManagement {
@@ -16889,8 +16555,7 @@ declare namespace Commerce.CashManagement {
 declare namespace Commerce.CashManagement {
     class CreateTenderRemovalTransactionClientRequest<TResponse extends CreateTenderRemovalTransactionClientResponse> extends CreateCashManagementTransactionClientRequestBase<TResponse> {
         toShift?: Proxy.Entities.Shift;
-        readonly transactionCurrency: string;
-        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, toShift?: Proxy.Entities.Shift, transactionCurrency?: string);
+        constructor(isOperationAborted: boolean, amountEntered: number, denominationDetails: Proxy.Entities.DenominationDetail[], operationComment: string, shift: Proxy.Entities.Shift, correlationId: string, toShift?: Proxy.Entities.Shift);
     }
 }
 declare namespace Commerce.CashManagement {
@@ -19473,18 +19138,6 @@ declare namespace Commerce.Triggers {
     }
     export interface IPreUpdateInventoryAdjustmentDocumentAddedProductLineTriggerOptions extends IInventoryDocumentLineTriggerOptions {
     }
-    export interface IPreInventoryDocumentProductLocationSelectionTriggerOptions extends ITriggerOptions {
-        readonly document: Readonly<Proxy.Entities.InventoryInboundOutboundDocument>;
-        readonly product: Readonly<Proxy.Entities.SimpleProduct>;
-        readonly isMovementToLocation: boolean;
-        readonly locationId: string;
-    }
-    export interface IPostInventoryDocumentProductLocationSelectionTriggerOptions extends ITriggerOptions {
-        readonly document: Readonly<Proxy.Entities.InventoryInboundOutboundDocument>;
-        readonly product: Readonly<Proxy.Entities.SimpleProduct>;
-        readonly locationId: string;
-        readonly isMovementToLocation: boolean;
-    }
     export {};
 }
 declare namespace Commerce.Triggers {
@@ -19748,7 +19401,6 @@ declare namespace Commerce.Triggers {
     }
     interface IPostEndTransactionTriggerOptions extends ITriggerOptions {
         receipts: Proxy.Entities.Receipt[];
-        salesOrder: Proxy.Entities.SalesOrder;
     }
     interface IPreVoidTransactionTriggerOptions extends ITransactionTriggerOptions {
     }
@@ -19811,7 +19463,6 @@ declare namespace Commerce.Triggers {
         static readonly PostTotalDiscountAmount: NonCancelableTypeValue;
         static readonly PostTotalDiscountPercent: NonCancelableTypeValue;
         static readonly PostCommitInventoryDocument: NonCancelableTypeValue;
-        static readonly PostInventoryDocumentProductLocationSelection: NonCancelableTypeValue;
         static readonly OperationFailure: NonCancelableTypeValue;
         static readonly PostOperation: NonCancelableTypeValue;
         static readonly PostPayment: NonCancelableTypeValue;
@@ -19847,7 +19498,7 @@ declare namespace Commerce.Triggers {
         static readonly PostOpenCashDrawer: NonCancelableTypeValue;
     }
     type CancelableTriggerTypeName = keyof typeof CancelableTriggerType;
-    type DataModificationCancelableTriggerTypeName = CancelableTriggerTypeName & ("PreAdjustStockCountLineQuantity" | "PreCreatePackingSlip" | "PreCreateInventoryDocument" | "PreCreateTransferOrder" | "PreElevateUser" | "PreGetFulfillmentLines" | "PreLogOn" | "PreEnrollUserCredentials" | "PreMarkFulfillmentLinesAsPacked" | "PreOpenUrl" | "PreSaveCustomerAddress" | "PreSaveStockCountJournal" | "PreSearchOrders" | "PreSelectTransactionPaymentMethod" | "PreShipFulfillmentLines" | "PreShipSelectedCartLines" | "PreUnlockTerminal" | "PreUpdateInventoryAdjustmentDocumentLineNote" | "PreUpdateInventoryDocument" | "PreUpdateTransferOrder" | "PreUpdateInventoryAdjustmentDocumentAddedProductLine" | "PreInventoryDocumentProductLocationSelection");
+    type DataModificationCancelableTriggerTypeName = CancelableTriggerTypeName & ("PreAdjustStockCountLineQuantity" | "PreCreatePackingSlip" | "PreCreateInventoryDocument" | "PreCreateTransferOrder" | "PreElevateUser" | "PreGetFulfillmentLines" | "PreLogOn" | "PreEnrollUserCredentials" | "PreMarkFulfillmentLinesAsPacked" | "PreOpenUrl" | "PreSaveCustomerAddress" | "PreSaveStockCountJournal" | "PreSearchOrders" | "PreSelectTransactionPaymentMethod" | "PreShipFulfillmentLines" | "PreShipSelectedCartLines" | "PreUnlockTerminal" | "PreUpdateInventoryAdjustmentDocumentLineNote" | "PreUpdateInventoryDocument" | "PreUpdateTransferOrder" | "PreUpdateInventoryAdjustmentDocumentAddedProductLine");
     type DataModificationCancelableTriggerTypeValueType = DataModificationCancelableTriggerTypeValue<DataModificationCancelableTriggerTypeName>;
     type CancelableTriggerTypeValueType = CancelableTriggerTypeValue<CancelableTriggerTypeName>;
     abstract class CancelableTriggerType {
@@ -19924,7 +19575,6 @@ declare namespace Commerce.Triggers {
         static readonly PreShipFulfillmentLines: DataModificationCancelableTriggerTypeValueType;
         static readonly PreUpdateTransferOrder: DataModificationCancelableTriggerTypeValueType;
         static readonly PreUpdatePickUpQuantity: CancelableTriggerTypeValueType;
-        static readonly PreInventoryDocumentProductLocationSelection: DataModificationCancelableTriggerTypeValueType;
     }
 }
 //# Pos.Core.Contracts.Public.d.ts.map
@@ -20567,7 +20217,6 @@ declare namespace Commerce.Extensibility {
     interface ISearchOrdersToExtensionCommandMessageTypeMap extends IViewToExtensionCommandMessageTypeMap {
         "Initialize": ISerchOrdersExtensionCommandState;
         "OrderSelected": SearchOrdersSelectedData;
-        "ListOfSelectedOrdersChanged": Proxy.Entities.SalesOrder[];
         "OrderSelectionCleared": void;
     }
     interface IExtensionToSearchOrdersMessageTypeMap {
@@ -20795,8 +20444,7 @@ declare namespace Commerce.Extensibility {
         readonly isVisible: boolean;
     }
     interface INavigationPaneConfiguration {
-        readonly isVisible?: boolean;
-        readonly isBackNavigationDisabled?: boolean;
+        readonly isVisible: boolean;
     }
     interface ICustomViewControllerBaseState {
         title: string;
